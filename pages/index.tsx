@@ -1,18 +1,25 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import supabase from '../utils/supabase.js'
 
-export function getStaticProps() {
-  return {
-    props: {
-      name: 'Next.js',
-      projects:[],
-    },
-  }
+export async function getStaticProps() {
+let { data: projects, error } = await supabase
+.from('projects')
+.select('*')
+
+console.log('projects', projects)
+if(error) {
+  throw new Error(error.message)
 }
 
-const Home: NextPage = ({projects}) => {
+  return {
+    props: {
+      projects,
+    },
+  };
+}
+
+export default function Home({projects}: {projects: any}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -31,5 +38,3 @@ const Home: NextPage = ({projects}) => {
     </div>
   )
 }
-
-export default Home

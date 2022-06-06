@@ -1,5 +1,3 @@
-const supabase = createClient(SUPABASE_URL, process.env.SUPABASE_KEY);
-
 export const project_details = [
   {
     "id": "",
