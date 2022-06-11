@@ -27,7 +27,6 @@ Check out the demo [kamal-wardi-portfolio](https://vercel.com/wardi-kamal/kamal-
 
 ## Project Structure
 Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871de44a02ac15b6b37da2f518) to see detailed informations !
-<a href="https://wardikamal.notion.site/Portfolio-v1-a9f8e0871de44a02ac15b6b37da2f518" target="_blank">portfolio v1</a>
 
 
 ### Tests to implement
@@ -37,14 +36,14 @@ Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871
 - test if data are correctly pushed to the database (if i had implemented create logic in the backend)
 - test if contact feature is working
 
-test if the navigation is working
-test if modal is working
-test if the page is responsive
-test if the page is accessible
-test if the page is SEO friendly
-test if the page is mobile friendly or mobile first
-test if the page is accessible on mobile/tablet/desktop/large screen/ultra wide screen/etc
+- test if the navigation is working
+- test if modal is working
+- test if the page is responsive
+- test if the page is accessible
+- test if the page is SEO friendly
+- test if the page is mobile friendly or mobile first
+- test if the page is accessible on mobile/tablet/desktop/large screen/ultra wide screen/etc
 
-implement the contact feature
-implement the security logic for the contact feature
-implement the create logic in the backend (optional)
+- implement the contact feature
+- implement the security logic for the contact feature
+- implement the create logic in the backend (optional)
