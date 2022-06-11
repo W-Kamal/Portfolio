@@ -27,14 +27,15 @@ Check out the demo [kamal-wardi-portfolio](https://vercel.com/wardi-kamal/kamal-
 
 ## Project Structure
 Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871de44a02ac15b6b37da2f518) to see detailed informations !
+<a href="https://wardikamal.notion.site/Portfolio-v1-a9f8e0871de44a02ac15b6b37da2f518" target="_blank">portfolio v1</a>
 
 
 ### Tests to implement
-test if numbers are correctly parsed if they are passed as strings
-test if data are correctly pulled from the database
-test if the data is correctly displayed in the page
-test if data are correctly pushed to the database (if i had implemented create logic in the backend)
-test if contact feature is working
+- test if numbers are correctly parsed if they are passed as strings
+- test if data are correctly pulled from the database
+- test if the data is correctly displayed in the page
+- test if data are correctly pushed to the database (if i had implemented create logic in the backend)
+- test if contact feature is working
 
 test if the navigation is working
 test if modal is working
