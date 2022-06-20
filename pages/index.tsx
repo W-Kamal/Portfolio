@@ -29,8 +29,7 @@ export default function Index({projects}: {projects: any}) {
       </Head>
 
       <main className={styles.main}>
-        <pre>{JSON.stringify(projects, null, 2)}</pre>
-        console.log(projects)
+        {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
       </main>
 
       <footer className={styles.footer}>
