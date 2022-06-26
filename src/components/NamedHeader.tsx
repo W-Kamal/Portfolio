@@ -1,7 +1,4 @@
-export {}
-// import React from "react"
-
-// const profileImg = "src/assets/picture.webp"
+// const profileImg = "src/assets/myFace.webp"
 
 const NamedHeader = () => {
   return (
@@ -9,7 +6,7 @@ const NamedHeader = () => {
       <picture className='profile__container'>
         {/* <img csslassName="profile__img" src={profileImg} alt="Hello, this is me"></img> */}
       </picture>
-      <span>Wardi Kamal</span>
+      <span className='profile__name'>Wardi Kamal</span>
     </div>
   )
 }
