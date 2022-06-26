@@ -5,9 +5,9 @@ export {}
 
 const NamedHeader = () => {
   return (
-    <div className="profile">      
-      <picture className="profile__container">
-        {/* <img className="profile__img" src={profileImg} alt="Hello, this is me"></img> */}
+    <div className='profile'>
+      <picture className='profile__container'>
+        {/* <img csslassName="profile__img" src={profileImg} alt="Hello, this is me"></img> */}
       </picture>
       <span>Wardi Kamal</span>
     </div>
