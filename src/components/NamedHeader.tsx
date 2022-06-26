@@ -1,15 +1,15 @@
 export {}
+// import React from "react"
 
+// const profileImg = "src/assets/picture.webp"
 
 const NamedHeader = () => {
   return (
-    <div>
-      <header className="App-header">
-      <picture>
-        <img></img>
+    <div className="profile">      
+      <picture className="profile__container">
+        {/* <img className="profile__img" src={profileImg} alt="Hello, this is me"></img> */}
       </picture>
       <span>Wardi Kamal</span>
-      </header>
     </div>
   )
 }
