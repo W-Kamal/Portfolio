@@ -19,7 +19,7 @@ export const project_details = [
   }
 ];
 
-export const testimonials = [
+export const comments = [
   {
     "id": "",
     "name": "",
