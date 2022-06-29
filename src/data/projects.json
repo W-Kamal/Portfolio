@@ -1,0 +1,26 @@
+{
+  "id": "",
+  "created_at": "",
+  "title": "",
+  "description": "",
+  "thumbnail_path": "",
+  "started_date": "",
+  "ended_date": "",
+  "front_stack": "",
+  "back_stack": "",
+  "type": "",
+  "status": "",
+  "purpose": "",
+  "is_published": "",
+  "path":{    
+    "repository_path": "",
+    "demo_path": "",
+    "devGarden_path": ""
+  },
+  "comments": {
+      "id": "",
+      "title": "",
+      "content": "",
+      "is_published": ""
+    }
+}

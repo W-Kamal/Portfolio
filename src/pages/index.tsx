@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import supabase from 'api/supabase.js'
-import Button from "components/Button"
-import ComposedHeader from "components/ComposedHeader"
-import Availability from "components/Availability"
-import ProjectCarroussel from "components/ProjectCarroussel"
+import Button from "src/components/Button"
+import ComposedHeader from "src/components/ComposedHeader"
+import Availability from "src/components/Availability"
+import ProjectCarroussel from "src/components/ProjectCarroussel"
 
 // for SSR of CSS rules
 import { getCssText } from '../../stitches.config';
