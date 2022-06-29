@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import supabase from '../utils/supabase.js'
-import Button from "../component/Button"
-import ComposedHeader from "../component/ComposedHeader"
-import Availability from "../component/Availability"
-import ProjectCarroussel from "../component/ProjectCarroussel"
+import supabase from 'api/supabase.js'
+import Button from "components/Button"
+import ComposedHeader from "components/ComposedHeader"
+import Availability from "components/Availability"
+import ProjectCarroussel from "components/ProjectCarroussel"
 
+// for SSR of CSS rules
+import { getCssText } from '../../stitches.config';
+
+/*
 export async function getStaticProps() {
 let { data: projects, error } = await supabase
 .from('projects')
@@ -22,6 +26,7 @@ if(error) {
     },
   };
 }
+*/
 
 export default function Home({projects}: {projects: any}) {
   return (
@@ -30,6 +35,8 @@ export default function Home({projects}: {projects: any}) {
         <title>WARDI Kamal</title>
         <meta name="description" content="wardi Kamal portfolio" />
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://kit.fontawesome.com/a0526e87eb.js" defer />
+        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
       </Head>
 
       <main className={styles.main}>

@@ -13,8 +13,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "data/*":["./src/data/*"],
+      "api/*":["./src/api/*"],
+      "components/*":["./src/components/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/dash/index.tsx", "pages/dash/[...params].jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/dash/index.tsx", "src/pages/dash/[...params].jsx"],
   "exclude": ["node_modules"]
 }
