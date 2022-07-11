@@ -11,7 +11,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon="fa-brands fa-twitter" />
+          {/* <FontAwesomeIcon icon="fa-brands fa-twitter" /> */}
         </a>
         <a
           href="https://www.linkedin.com/in/ericschonhofen/"
@@ -19,7 +19,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon="fa-brands fa-twitter" />
+          {/* <FontAwesomeIcon icon="fa-brands fa-twitter" /> */}
         </a>
         <a
           href="https://github.com/erischon"
@@ -27,7 +27,7 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon="fa-brands fa-twitter" />
+          {/* <FontAwesomeIcon icon="fa-brands fa-twitter" /> */}
         </a>
       </div>
   )

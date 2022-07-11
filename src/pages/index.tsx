@@ -1,13 +1,17 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import supabase from 'api/supabase.js'
 import Button from "src/components/Button"
 import ComposedHeader from "src/components/ComposedHeader"
 import Availability from "src/components/Availability"
 import ProjectCarroussel from "src/components/ProjectCarroussel"
 
+const HeaderWrapper = styled("header",{
+  display:'flex',
+  color:'red'
+})
+
 // for SSR of CSS rules
-import { getCssText } from '../../stitches.config';
+import { getCssText, styled } from '../../stitches.config';
 
 /*
 export async function getStaticProps() {
@@ -42,18 +46,18 @@ export default function Home({projects}: {projects: any}) {
       <main className={styles.main}>
         {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
       <div className="page-wrapper">
-      <header className="header__wrapper">
-        <ComposedHeader />
-        <Button />
-        <Availability />
-      </header>
-      <main>
-        <section id="showcase">
-          <ProjectCarroussel />
-        </section>
-        <section id="about"></section>
-      </main>
-    </div>
+        <HeaderWrapper>
+          <ComposedHeader />
+          <Button />
+          <Availability />
+        </HeaderWrapper>
+        <main>
+          <section id="showcase">
+            <ProjectCarroussel />
+          </section>
+          <section id="about"></section>
+        </main>
+      </div>
       </main>
       <footer>
         <Availability />

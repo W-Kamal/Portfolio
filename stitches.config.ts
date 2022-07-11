@@ -1,5 +1,5 @@
 // from blog post of "using-nextjs-with-stitches
-import { createStitches } from "@stitches/react";
+import { createStitches, createTheme } from "@stitches/react";
 
 export const {styled, getCssText } = createStitches({
   theme:{
@@ -8,7 +8,8 @@ export const {styled, getCssText } = createStitches({
     },
     colors:{
       hiContrast:'hsl(206,10%,5%)',
-      loContrast:'white'
+      loContrast:'white',
+      violet800: 'hsl(252 62% 54.9%)',
     },
     fontSizes:{
       1:'16px',
@@ -17,3 +18,20 @@ export const {styled, getCssText } = createStitches({
     }
   }
 })
+
+const theme1 = createTheme({
+  colors: {
+    primary: 'white',
+  },
+});
+
+const theme2 = createTheme({
+  colors: {
+    primary: 'white',
+  },
+});
+
+const Button = styled('button', {
+  backgroundColor: '$violet800',
+});
+
