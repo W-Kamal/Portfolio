@@ -1,5 +1,5 @@
-import { FaLinkedinIn } from 'react-icons/fa';
-import { FiGithub, FiTwitter } from 'react-icons/fi';
+import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub, FiTwitter } from "react-icons/fi";
 import { styled } from "@stitches/react"
 
 const SocialWrapperm = styled("div", {

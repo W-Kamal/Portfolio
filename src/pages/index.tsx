@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Button from "src/components/Button"
-import ComposedHeader from "src/components/ComposedHeader"
+import ComposedHeader from "components/Hero"
 import Availability from "src/components/Availability"
-import ProjectCarroussel from "src/components/ProjectCarroussel"
+import ProjectCarroussel from "src/features/slider/ProjectSlider"
 import { getCssText, styled } from '../../stitches.config';
 
 const HeaderWrapper = styled("header",{

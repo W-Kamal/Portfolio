@@ -6,8 +6,9 @@ import { styled } from "@stitches/react"
 const HeadNav = styled("nav", {
   display:"flex",
   flexDirection:"row",
-  width:'100%',
-  backgroundColor:"lime"
+  backgroundColor:"lime",
+  width:"100%",
+  maxWidth:"100vh"
 })
 const ComposedHeader = () => {
   return (
