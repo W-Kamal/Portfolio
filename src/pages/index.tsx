@@ -4,33 +4,14 @@ import Button from "src/components/Button"
 import ComposedHeader from "src/components/ComposedHeader"
 import Availability from "src/components/Availability"
 import ProjectCarroussel from "src/components/ProjectCarroussel"
+import { getCssText, styled } from '../../stitches.config';
 
 const HeaderWrapper = styled("header",{
   display:'flex',
+  flexDirection:'column',
   color:'red'
 })
 
-// for SSR of CSS rules
-import { getCssText, styled } from '../../stitches.config';
-
-/*
-export async function getStaticProps() {
-let { data: projects, error } = await supabase
-.from('projects')
-.select('*')
-
-console.log('projects', projects)
-if(error) {
-  throw new Error(error.message)
-}
-
-  return {
-    props: {
-      projects,
-    },
-  };
-}
-*/
 
 export default function Home({projects}: {projects: any}) {
   return (
@@ -38,8 +19,7 @@ export default function Home({projects}: {projects: any}) {
       <Head>
         <title>WARDI Kamal</title>
         <meta name="description" content="wardi Kamal portfolio" />
-        <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/a0526e87eb.js" defer />
+        <link rel="icon" href="/favicon.svg" />
         <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
       </Head>
 

@@ -1,26 +1,99 @@
 {
-  "id": "",
-  "created_at": "",
-  "title": "",
-  "description": "",
-  "thumbnail_path": "",
-  "started_date": "",
-  "ended_date": "",
-  "front_stack": "",
-  "back_stack": "",
-  "type": "",
-  "status": "",
-  "purpose": "",
-  "is_published": "",
-  "path":{    
-    "repository_path": "",
-    "demo_path": "",
-    "devGarden_path": ""
-  },
-  "comments": {
-      "id": "",
-      "title": "",
-      "content": "",
-      "is_published": ""
+  "projects" : [
+    {
+      "id": "6",
+      "created_at": "06/06/2022",
+      "started_date": "22/09/2021",
+      "ended_date": "22/09/2021",
+      "title": "FishEye",
+      "name":"Créez un site accessible pour une plateforme de photographes",
+      "description": "Plateforme pour photographes freelance.",
+      "type": "Openclassrooms",
+      "status": "Completed",
+      "purpose": "Integration de maquette et sémantique pour favoriser l'accessibilité",
+      "stack":[
+        "JS",
+        "HTML",
+        "CSS",
+        "Node.js"
+      ],
+      "is_published": true,
+      "click_score":3,
+      "paths" : {
+        "thumbnail_path": "",
+        "repository_path": "https://github.com/WARDI-Kamal/WARDI-Kamal_6_22092021",
+        "demo_path": "https://naughty-davinci-c9dc83.netlify.app/index.html"
+      }
+    },
+    {
+      "id": "10",
+      "created_at": "06/06/2022",
+      "started_date": "01/01/2022",
+      "ended_date": "19/01/2022",
+      "title": "Learn@Home",
+      "name":"Définissez les besoins pour une app de soutien scolaire",
+      "description": "Projet de création d'un site de soutien scolaire pour une association.",
+      "type": "Openclassrooms",
+      "status": "Completed",
+      "purpose": "Conception et Design de l'application pour validation.",
+      "stack":[
+        "Figma"
+      ],
+      "is_published": false,
+      "click_score":10,
+      "paths" : {
+        "thumbnail_path": "https://ddeaqslpkdqokytenaul.supabase.co/storage/v1/object/sign/thumbnails/thumb_p10.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ0aHVtYm5haWxzL3RodW1iX3AxMC53ZWJwIiwiaWF0IjoxNjU0NjAxOTcxLCJleHAiOjE5Njk5NjE5NzF9.DgDVbizfRuwbOEebhcxwVjlLVTsJX9cUkMVD5ZPls28",
+        "repository_path": "https://github.com/WARDI-Kamal/WARDI-Kamal_10_19012022",
+        "demo_path": "https://www.figma.com/file/WbNgcPSvqcF3NhbjQqqiKl/P10---Lear%40Home?node-id=0%3A1"
+      }
+    },
+    {
+      "id": "11",
+      "created_at": "06/06/2022",
+      "started_date": "26/01/2022",
+      "ended_date": "13/02/2022",
+      "title": "Kasa",
+      "name":"Développez une application Web avec React et React Router",
+      "description": "Plateforme de location entre particuliers.",
+      "type": "Openclassrooms",
+      "status": "Completed",
+      "purpose": "Refonte totale du site en React.",
+      "stack":[
+        "React.js",
+        "CRA",
+        "Node.js"
+      ],
+      "is_published": true,
+      "click_score":8,
+      "paths" : {
+        "thumbnail_path": "https://ddeaqslpkdqokytenaul.supabase.co/storage/v1/object/sign/thumbnails/thumb_p11.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ0aHVtYm5haWxzL3RodW1iX3AxMS53ZWJwIiwiaWF0IjoxNjU0NjA2NDQ1LCJleHAiOjE5Njk5NjY0NDV9.dXAJ1zs7VV8ocr6cKmnXqDhWCiZY76ZxGHV49iPOZcg",
+        "repository_path": "https://github.com/WARDI-Kamal/WARDI-Kamal_11_26012022",
+        "demo_path": ""
+      }
+    },
+    {
+      "id": "13",
+      "created_at": "06/06/2022",
+      "started_date": "28/02/2022",
+      "ended_date": "04/04/2022",
+      "title": "ArgentBank",
+      "name":"Utilisez une API pour un compte utilisateur bancaire avec React",
+      "description": "Création d'une application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.",
+      "type": "Openclassrooms",
+      "status": "Completed",
+      "purpose": "Authentification des utilisateurs.CRUD. Spécification des endpoints d’API.",
+      "stack":[
+        "React.js",
+        "Vite.js",
+        "Node.js"
+      ],
+      "is_published": true,
+      "click_score":1,
+      "paths" : {
+        "thumbnail_path": "https://ddeaqslpkdqokytenaul.supabase.co/storage/v1/object/sign/thumbnails/thumb_p13.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ0aHVtYm5haWxzL3RodW1iX3AxMy53ZWJwIiwiaWF0IjoxNjU0NjA2NTM3LCJleHAiOjE5Njk5NjY1Mzd9.L05IE7z7VSktPMH8lr47cyTP1RIxc9PLVaWxIu9JvmE",
+        "repository_path": "https://github.com/WARDI-Kamal/WARDI-Kamal_13_28022022",
+        "demo_path": ""
+      }
     }
+  ]
 }

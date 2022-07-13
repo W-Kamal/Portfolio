@@ -1,79 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
-
-/** Optional values :
- * tools_stack:[
- *  "Figma",
- *  "AdobeXD",
- *  "Canvas",
- *  "Redux",
- *  "Redux Toolkit",
- *  "Recharts",
- *  "JsDoc",
- *  "LightHouse",
- *  "",
- *  "",
- *  "",
- * ]
- * front_stack:["React",
- *  "CRA",
- *  "Vite",
- *  "JS",
- *  "HTML",
- *  "CSS",
- *  "",
- *  "",
- *  "",
- *  "",
- *  "",
- *  ""
- * ];
- * back_stack:[
- *  "Node.js",
- *  "Express",
- *  "",
- *  "",
- *  "",
- *  "",
- *  "",
- *  ""
- * ];
- * 
- */
-
-export interface Data {
-  id:              number;
-  title:           string;
-  description:     string;
-  thumbnail_path:  string;
-  created_at:      Date;
-  started_date:    Date;
-  ended_date:      Date;
-  front_stack:     "React" | "Vite" | "JS";
-  back_stack:      "Node.js";
-  type:            [];
-  status:          string;
-  purpose:         string;
-  is_published:    boolean;
-  repository_path: string;
-  demo_path:       string;
-  devGarden_path:  string;
-  comments:        string;
-}
-
-
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ title: 'John Doe' })
-}
-
-
-
-export {}
-
 /**
  * SUPABASE TABLES
  * 
@@ -112,15 +36,25 @@ export {}
 // build a json file for each project with all the data needed to build the website
 
 
+export async function getStaticProps(url:string) {
+  const res = await fetch(url)
+  const projects = await res.json()
 
+  return {
+    props:{
+      projects
+    }
+  }
+}
 
 // helpers functions
-const getRequest = async (url) => {
+const getRequest = async (url:string) => {
   const res = await fetch(url)
   return res.json()
 }
 
-const postRequest = async (url, body) => {
+// Pour sauvegarder des stats du site et/ou les commentaires
+const postRequest = async (url:string, body:string) => {
   const res = await fetch(url, {
     method: 'POST',
     headers: {
@@ -133,10 +67,10 @@ const postRequest = async (url, body) => {
   return await res.json()
 }
 
-const getAllProjects = (apiUrl) => {
-  // return getRequest('/projects')
-  // return postRequest('/projects' ou apiUrl,{text:'hello'})
-}
+// const getAllProjects = (apiUrl) => {
+//   // return getRequest('/projects')
+//   // return postRequest('/projects' ou apiUrl,{text:'hello'})
+// }
 
 /**
  * Cette abstraction peut être utile

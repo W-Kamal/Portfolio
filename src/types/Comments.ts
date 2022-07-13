@@ -1,6 +1,9 @@
 export interface Comments {
-    id: string;
-    title: string;
-    content: string;
-    is_published: boolean;
+  id: number;
+  is_validate: boolean;
+  created_at: Date;
+  type: ["feedback"|"testimonial"|"inquiries"];
+  score:number;
+  name: string;
+  content: string;
 }

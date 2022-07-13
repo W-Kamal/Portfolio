@@ -1,25 +1,32 @@
+import { FaLinkedinIn } from 'react-icons/fa';
+import { FiGithub, FiTwitter } from 'react-icons/fi';
+import { styled } from "@stitches/react"
+
+const SocialWrapperm = styled("div", {
+  backgroundColor:"lime"
+})
 
 // est-ce que mettre les data en context est pertinent...?
 const SocialLinks = () => {
   const projectList: [] = []
 
   return (
-    <div className="social__container--footer">
+    <SocialWrapperm>
         <a
           href="https://twitter.com/erischon"
           className="home__social--link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <FontAwesomeIcon icon="fa-brands fa-twitter" /> */}
         </a>
+        {<FiGithub />}
         <a
           href="https://www.linkedin.com/in/ericschonhofen/"
           className="home__social--link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <FontAwesomeIcon icon="fa-brands fa-twitter" /> */}
+          {<FaLinkedinIn stroke="black" />}
         </a>
         <a
           href="https://github.com/erischon"
@@ -27,9 +34,9 @@ const SocialLinks = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <FontAwesomeIcon icon="fa-brands fa-twitter" /> */}
+          {<FiTwitter />}
         </a>
-      </div>
+      </SocialWrapperm>
   )
 }
 
