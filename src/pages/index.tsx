@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Button from "src/components/Button"
-import ComposedHeader from "components/Hero"
+import Hero from "components/Hero/Hero"
 import Availability from "src/components/Availability"
 import ProjectCarroussel from "src/features/slider/ProjectSlider"
 import { getCssText, styled } from '../../stitches.config';
@@ -27,7 +27,7 @@ export default function Home({projects}: {projects: any}) {
         {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
       <div className="page-wrapper">
         <HeaderWrapper>
-          <ComposedHeader />
+          <Hero />
           <Button />
           <Availability />
         </HeaderWrapper>

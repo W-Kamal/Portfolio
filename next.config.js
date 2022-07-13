@@ -8,5 +8,10 @@ module.exports = {
   i18:{
     locales:['fr','en'],
     defaultLocale:'fr'
+  },
+  images: {
+    formats:['image/avif', 'image/webp'],
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
   }
 }
