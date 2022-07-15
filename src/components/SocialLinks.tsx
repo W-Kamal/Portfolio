@@ -1,44 +1,43 @@
 import { styled } from "@stitches/react"
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
-
+import Link from 'next/link'
 // comment appliquer un style global aux react-icons
 
-const SocialWrapperm = styled("div", {
+const SocialWrapper = styled("div", {
+  display:"flex",
   backgroundColor:"lightgrey",
-  width:"3rem"
+  width:"7rem",
+  height:"2rem",
+  justifyContent:"space-between",
+  alignItems:"center",
+  marginInline: "1.5rem"
+})
+const SocialIcon = styled("a",{
+  cursor:"pointer",
+  rel:"noopener noreferrer",
+  fontSize:"1.5rem"
 })
 
 // est-ce que mettre les data en context est pertinent...?
 const SocialLinks = () => {
-  const projectList: [] = []
-
   return (
-    <SocialWrapperm>
-        <a
-          href="https://twitter.com/MozaiK_K"
-          className="home__social--link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {<FaTwitter color="black" title="twitter icon" size="1.5rem" className="social__icon" />}
-        </a>
-        <a
-          href="https://www.linkedin.com/in/kamal-wardi/"
-          className="home__social--link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          {<FaLinkedinIn color="black" title="linkedin icon" size="1.5rem" className="social__icon" />}
-        </a>
-        <a
-          href="https://github.com/WARDI-Kamal"
-          className="home__social--link"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          {<FaGithub color="black" title="github icon" size="1.5rem" className="social__icon" />}
-        </a>
-      </SocialWrapperm>
+    <SocialWrapper>
+      <Link href="https://twitter.com/MozaiK_K" passHref>
+        <SocialIcon target="_blank">
+          {<FaTwitter color="black" title="twitter icon" />}
+        </SocialIcon>
+      </Link>
+      <Link href="https://www.linkedin.com/in/kamal-wardi/" passHref>
+        <SocialIcon target="_blank">
+          {<FaLinkedinIn color="black" title="linkedin icon" />}
+        </SocialIcon>
+      </Link>
+      <Link href="https://github.com/WARDI-Kamal" passHref>
+      <SocialIcon target="_blank">
+        {<FaGithub color="black" title="github icon" />}
+      </SocialIcon>
+      </Link>        
+    </SocialWrapper>
   )
 }
 

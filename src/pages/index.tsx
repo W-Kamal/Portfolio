@@ -1,48 +1,66 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Button from "src/components/Button"
-import Hero from "components/Hero/Hero"
-import Availability from "src/components/Availability"
-import ProjectCarroussel from "src/features/slider/ProjectSlider"
-import { getCssText, styled } from '../../stitches.config';
+import Cta from "../components/Cta"
+import Hero from "../features/Hero"
+import Availability from "../components/Availability"
+import ProjectCarroussel from "../features/ProjectSlider"
+import { globalCss, styled } from '../../stitches.config'
 
-const HeaderWrapper = styled("header",{
+const globalStyles = globalCss({
+  '*': {
+    boxSizing: 'border-box'
+  },
+  'body': {
+    margin: 0,
+    padding: 0
+  },
+  'a': {
+    color: 'inherit',
+    textDecoration: 'none'
+  }
+});
+
+const Mainwrapper = styled('div', {})
+
+const HeroWrapper = styled("header",{
   display:'flex',
   flexDirection:'column',
   color:'red'
 })
 
+const FooterWrapper = styled("footer",{
+  display:'flex',
+  flexDirection:'row',
+  color:'purple'
+})
+
 
 export default function Home({projects}: {projects: any}) {
+  globalStyles()
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>WARDI Kamal</title>
         <meta name="description" content="wardi Kamal portfolio" />
         <link rel="icon" href="/favicon.svg" />
-        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }} />
       </Head>
 
-      <main className={styles.main}>
-        {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
-      <div className="page-wrapper">
-        <HeaderWrapper>
+      <Mainwrapper>
+        <HeroWrapper>
           <Hero />
-          <Button />
+          <Cta />
           <Availability />
-        </HeaderWrapper>
+        </HeroWrapper>
         <main>
           <section id="showcase">
             <ProjectCarroussel />
           </section>
           <section id="about"></section>
         </main>
-      </div>
-      </main>
-      <footer>
-        <Availability />
-        <Button />
-      </footer>
-    </div>
+        <FooterWrapper>
+          <Availability />
+          <Cta />
+        </FooterWrapper>
+      </Mainwrapper>
+    </>
   )
 }
