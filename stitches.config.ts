@@ -84,6 +84,9 @@ export const {
       4: '17px',
       5: '19px',
       6: '21px',
+      7: "27px",
+      8: "35px",
+      9: "59px"
     },
     fonts: {
       system: 'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
@@ -108,20 +111,12 @@ export const {
     }),
   },
   media: {
-    bp1: '(min-width: 320px)',
-    bp2: '(min-width: 480px)',
-    bp3: '(min-width: 540px)',
-    bp4: '(min-width: 600px)',
-    bp5: '(min-width: 720px)',
-    bp6: '(min-width: 800px)',
-    bp7: '(min-width: 900px)',
-    bp8: '(min-width: 1024px)',
-    bp9: '(min-width: 1280px)',
-    bp10: '(min-width: 1366px)',
-    bp11: '(min-width: 1440px)',
-    bp12: '(min-width: 1680px)',
-    bp13: '(min-width: 1920px)',
-    bp14: '(min-width: 2560px)'
+    bp1: "(min-width: 520px)",
+    bp2: "(min-width: 900px)",
+    bp3: "(min-width: 1200px)",
+    bp4: "(min-width: 1800px)",
+    motion: "(prefers-reduced-motion)",
+    hover: "(any-hover: hover)"
   },
 })
 
