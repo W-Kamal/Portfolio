@@ -19,13 +19,14 @@ const globalStyles = globalCss({
   }
 });
 
-const Mainwrapper = styled('div', {})
+const Pagewrapper = styled('div', {})
 
 const HeroWrapper = styled("header",{
   display:'flex',
   flexDirection:'column',
   color:'red'
 })
+const Mainwrapper = styled('div', {})
 
 const FooterWrapper = styled("footer",{
   display:'flex',
@@ -44,23 +45,25 @@ export default function Home({projects}: {projects: any}) {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <Mainwrapper>
+      <Pagewrapper>      
         <HeroWrapper>
           <Hero />
-          <Cta />
+          {/* <Cta /> */}
           <Availability />
         </HeroWrapper>
-        <main>
+
+        <Mainwrapper>
           <section id="showcase">
             <ProjectCarroussel />
           </section>
           <section id="about"></section>
-        </main>
+        </Mainwrapper>
+
         <FooterWrapper>
           <Availability />
           <Cta />
         </FooterWrapper>
-      </Mainwrapper>
+      </Pagewrapper>
     </>
   )
 }
