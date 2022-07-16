@@ -142,7 +142,7 @@ export const theme2 = createTheme({
     button:"$CGBlue",
     background: "$AliceBlue",
     border:"$CGBlue"
-  },
+  }
 });
 export const theme3 = createTheme({
   colors: {
@@ -160,7 +160,7 @@ export const theme4 = createTheme({
     button:"$BlueMunsell",
     background: "$LightCyan",
     border:"$BlueMunsell"
-  },
+  }
 });
 export const theme5  = createTheme({
   colors: {

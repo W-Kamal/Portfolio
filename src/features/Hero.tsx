@@ -7,8 +7,7 @@ const HeadNav = styled("nav", {
   display:"flex",
   flexDirection:"row",
   justifyContent:"space-between",
-  alignItems:"center",
-  backgroundColor:"lime"
+  alignItems:"center"
 })
 const ComposedHeader = () => {
   return (
