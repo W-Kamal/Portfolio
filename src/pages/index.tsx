@@ -6,23 +6,24 @@ import Availability from "../components/Availability"
 import ProjectCarroussel from "../features/ProjectSlider"
 import { styled, theme1, theme2, theme3, theme4, theme5 } from '../../stitches.config'
 
+
+// Styling
 const Pagewrapper = styled('div', {
   color:'$primary',
   backgroundColor:'$background',
-  paddingInline:"2rem"
+  padding:"2rem"
 })
-
 const HeroWrapper = styled("header",{
   display:'flex',
   flexDirection:'column',
 })
-const Mainwrapper = styled('div', {})
-
+const Mainwrapper = styled('div', {
+  height:"15rem"
+})
 const FooterWrapper = styled("footer",{
   display:'flex',
   flexDirection:'row'
 })
-
 
 export default function Home({projects}: {projects: any}) {
   return (
@@ -33,7 +34,7 @@ export default function Home({projects}: {projects: any}) {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <Pagewrapper className={theme5}>      
+      <Pagewrapper className={theme3}>      
         <HeroWrapper>
           <Hero />
           {/* <Cta /> */}

@@ -3,7 +3,7 @@ import TitleHeader from "../components/TitleHeader"
 import SocialLinks from "../components/SocialLinks"
 import { styled } from "@stitches/react"
 
-const HeadNav = styled("nav", {
+const StyledNav = styled("nav", {
   display:"flex",
   flexDirection:"row",
   justifyContent:"space-between",
@@ -12,10 +12,10 @@ const HeadNav = styled("nav", {
 const ComposedHeader = () => {
   return (
     <>
-    <HeadNav>
+    <StyledNav>
       <Avatar/>
       <SocialLinks/>
-    </HeadNav>
+    </StyledNav>
       <TitleHeader/>
     </>
   )
