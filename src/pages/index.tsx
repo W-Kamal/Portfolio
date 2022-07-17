@@ -1,5 +1,3 @@
-import Head from 'next/head'
-
 import Cta from "../components/Cta"
 import Hero from "../features/Hero"
 import Availability from "../components/Availability"
@@ -27,32 +25,24 @@ const FooterWrapper = styled("footer",{
 
 export default function Home({projects}: {projects: any}) {
   return (
-    <>
-      <Head>
-        <title>WARDI Kamal</title>
-        <meta name="description" content="wardi Kamal portfolio" />
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+    <Pagewrapper className={theme3}>      
+      <HeroWrapper>
+        <Hero />
+        {/* <Cta /> */}
+        <Availability />
+      </HeroWrapper>
 
-      <Pagewrapper className={theme3}>      
-        <HeroWrapper>
-          <Hero />
-          {/* <Cta /> */}
-          <Availability />
-        </HeroWrapper>
+      <Mainwrapper>
+        <section id="showcase">
+          <ProjectCarroussel />
+        </section>
+        <section id="about"></section>
+      </Mainwrapper>
 
-        <Mainwrapper>
-          <section id="showcase">
-            <ProjectCarroussel />
-          </section>
-          <section id="about"></section>
-        </Mainwrapper>
-
-        <FooterWrapper>
-          <Availability />
-          <Cta />
-        </FooterWrapper>
-      </Pagewrapper>
-    </>
+      <FooterWrapper>
+        <Availability />
+        <Cta />
+      </FooterWrapper>
+    </Pagewrapper>
   )
 }
