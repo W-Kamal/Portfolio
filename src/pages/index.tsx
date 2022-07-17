@@ -9,7 +9,7 @@ import { styled, theme1, theme2, theme3, theme4, theme5 } from '../../stitches.c
 const Pagewrapper = styled('div', {
   color:'$primary',
   backgroundColor:'$background',
-  padding:"2rem"
+  paddingInline:"2rem"
 })
 const HeroWrapper = styled("header",{
   display:'flex',

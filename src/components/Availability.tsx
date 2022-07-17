@@ -1,8 +1,6 @@
 import { styled } from "@stitches/react"
 import { useState } from "react"
 
-// est ce qu'il faut une autre fonction stitches pour 
-// utiliser variants ?
 const StyledAvailability = styled('span', {
   "&::before":{
     backgroundColor: "#95cd71",
