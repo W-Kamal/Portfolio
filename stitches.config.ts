@@ -1,8 +1,5 @@
-// from blog post of "using-nextjs-with-stitches
 import { createStitches, createTheme } from "@stitches/react";
 
-//On créé un thème de départ (default disons)
-//Grâce à la fonction createTheme on déclare les changements désirés
 export const { styled } = createStitches({
   theme: {
     colors: {      
@@ -78,8 +75,7 @@ export const { styled } = createStitches({
       2: '4px',
       3: '8px',
       round: '9999px',
-    },
-
+    }
   },
   utils: {
     marginX: (value:number) => ({
@@ -100,8 +96,7 @@ export const { styled } = createStitches({
     }),
     linearGradient: (value:number) => ({
       backgroundImage: `linear-gradient(${value})`,
-    }),
-
+    })
   },
   media: {
     bp1: "(min-width: 520px)",

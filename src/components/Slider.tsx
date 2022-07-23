@@ -1,10 +1,28 @@
-import {Projects} from "../types/Projects"
-
 interface Props {
-  type: ["Openclassrooms" | "Training" | "Client Project" | "Tuto"];
-  status: ["Completed" | "Wip" | "Standby"|"Abandonned"];
   stack: ["React.js"| "Vite.js"| "Node.js"|"Js"|"Html"|"Css"|"Express"|"Figma"|"Storybook"|"Redux"|"Redux Toolkit"|"Firebase"|"Supabase"|"Lighthouse"|"Jest"|"Zustand"|"ReCharts"|"Axios"|"Next.js"];
+};
+
+interface Projects {
+  id: number,
+  created_at: Date,
+  started_date: Date,
+  ended_date: Date;
+  title: string;
+  name:string;
+  description: string;
+  type: "Openclassrooms" | "Training" | "Client Project" | "Tuto";
+  status: "Completed" | "Wip" | "Standby"|"Abandonned";
+  goal: string;
+  stack: string[];
+  is_published: boolean;
+  click_score:number;
+  paths : {
+    thumbnail_path: string;
+    repository_path: string;
+    demo_path: string;
+  }
 }
+
 // fetch data here ?
 
 
@@ -32,13 +50,11 @@ const ProjectCarroussel = () => {
   return (
     <div>
       <article className="project__wrapper">
-        <div className="project__view">
-
-        </div>
+        <div className="project__view"></div>
         <div className="project__summary"></div>
       </article>
     </div>
   )
-}
+};
 
-export default ProjectCarroussel
+export default ProjectCarroussel;
