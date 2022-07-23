@@ -1,37 +1,22 @@
 import Image from "next/image"
 import AvatarImg from "/public/myFace.webp"
-import { styled } from '../../stitches.config';
-
-const StyledAvatarWrapper = styled("div",{
-  display:'flex',
-  flexDirection:'row',
-  gap:"1rem",
-  alignItems:"center"
-})
-const StyledImgContainer = styled("div",{
-  // borderRadius:"99999px",
-  borderRadius:"99999px",
-  width:"58px",
-  height:"58px",
-  overflow:"hidden"
-})
-
+import {AvatarWrapperStyle, NameStyle, imgStyle } from "../styles/heroStyle.css";
+import { styled } from "../../stitches.config";
 
 const NamedHeader = () => {
   return (
-    <>
-    <StyledAvatarWrapper>
-      <StyledImgContainer>
+    <AvatarWrapperStyle>
         <Image
-          className="profile__img"
           src={AvatarImg}
-          alt="Hello, it's me"
-          objectFit="fill"
+          alt="Hello, it's my face"
+          title="Hey there !"
+          width={58}
+          height={58}
+          objectFit="cover"
+          style={imgStyle}
         />
-      </StyledImgContainer>
-      <span className="profile__name">Wardi Kamal</span>
-    </StyledAvatarWrapper>
-    </>
+      <NameStyle>Wardi Kamal</NameStyle>
+    </AvatarWrapperStyle>
   )
 }
 

@@ -11,10 +11,11 @@ const StyledSocialWrapper = styled("div", {
   height:"2rem",
   justifyContent:"space-between",
   alignItems:"center",
-  marginInline: "1.5rem"
+  // marginInline: "1.5rem"
 })
 const StyledIcon = styled("a",{
   cursor:"pointer",
+  color:"$secondary",
   rel:"noopener noreferrer",
   fontSize:"1.5rem"
 })
@@ -25,17 +26,17 @@ const SocialLinks = () => {
     <StyledSocialWrapper>
       <Link href="https://twitter.com/MozaiK_K" passHref>
         <StyledIcon target="_blank">
-          {<FaTwitter color="black" title="twitter icon" />}
+          {<FaTwitter title="twitter icon" />}
         </StyledIcon>
       </Link>
       <Link href="https://www.linkedin.com/in/kamal-wardi/" passHref>
         <StyledIcon target="_blank">
-          {<FaLinkedinIn color="black" title="linkedin icon" />}
+          {<FaLinkedinIn title="linkedin icon" />}
         </StyledIcon>
       </Link>
       <Link href="https://github.com/WARDI-Kamal" passHref>
       <StyledIcon target="_blank">
-        {<FaGithub color="black" title="github icon" />}
+        {<FaGithub title="github icon" />}
       </StyledIcon>
       </Link>        
     </StyledSocialWrapper>

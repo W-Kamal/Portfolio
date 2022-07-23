@@ -1,33 +1,15 @@
 // from blog post of "using-nextjs-with-stitches
-import { createStitches } from "@stitches/react";
+import { createStitches, createTheme } from "@stitches/react";
 
 //On créé un thème de départ (default disons)
 //Grâce à la fonction createTheme on déclare les changements désirés
-export const {
-  config,
-  createTheme,
-  css,
-  getCssText,
-  globalCss,
-  styled,
-  theme,
-} = createStitches({
+export const { styled } = createStitches({
   theme: {
-    colors: {
-      hiContrast: 'hsl(206,10%,5%)',
-      loContrast: 'white',
-
-      gray100: 'hsl(206,22%,99%)',
-      gray200: 'hsl(206,12%,97%)',
-      gray300: 'hsl(206,11%,92%)',
-      gray400: 'hsl(206,10%,84%)',
-      gray500: 'hsl(206,10%,76%)',
-      gray600: 'hsl(206,10%,44%)',
-
+    colors: {      
       WintergreenDream:'hsla(154, 15%, 49%, 1)', //#6B9080
+      AzureX11:'hsla(180, 31%, 94%, 1)', //#EAF4F4
       cambridgeBlue:'hsla(147,21%,70%,1)', //A4C3B2
       LightCyan:'hsla(167,29%,85%,1)', //#CCE3DE
-      AzureX11:'hsla(180, 31%, 94%, 1)', //#EAF4F4
       MintCream2:'hsla(133,100%,98%,1)', //#F6FFF8
 
       PrussianBlue:'hsla(209,52%,16%,1)', //#13293D
@@ -41,12 +23,12 @@ export const {
       PapayeWhip:'hsla(43,82%,89%,1)', //#FAEDCD
       Fawn:'hsla(30,53%,64%,1)', //#D4A373
       Cornsilk:'hsla(52,94%,94%,1)', //#FEFAE0
-
+      
       OuterSpaceCrayola:'hsla(164,9%,23%,1)', //#36413E
       PrincetonOrange:'hsla(24,85%,56%,1)', // #EE7B30
       PersianOrange:'hsla(32,55%,55%,1)', //#CB904D
       DavysGrey:'hsla(220,2%,37%,1)', //#5D5E60
-
+      
       RussianGreen:'hsla(101,22%,45%,1)', //#688B58
       OxfordBlue:'hsla(213,96%,11%,1)', //#011936
       MintCream: 'hsla(113, 31%, 95%, 1)', //#EFF6EE
@@ -89,26 +71,37 @@ export const {
       9: "59px"
     },
     fonts: {
-      system: 'Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+      system: 'Inter, sans-serif',
     },
+    radii: {
+      1: '2px',
+      2: '4px',
+      3: '8px',
+      round: '9999px',
+    },
+
   },
   utils: {
     marginX: (value:number) => ({
-      marginLeft: value,
-      marginRight: value,
+      marginLeft: `${value}rem`,
+      marginRight: `${value}rem`,
     }),
     marginY: (value:number) => ({
-      marginTop: value,
-      marginBottom: value,
+      marginTop: `${value}rem`,
+      marginBottom: `${value}rem`,
     }),
     paddingX: (value:number) => ({
-      paddingLeft: value,
-      paddingRight: value,
+      paddingLeft: `${value}rem`,
+      paddingRight: `${value}rem`,
     }),
     paddingY: (value:number) => ({
-      paddingTop: value,
-      paddingBottom: value,
+      paddingTop: `${value}rem`,
+      paddingBottom: `${value}rem`,
     }),
+    linearGradient: (value:number) => ({
+      backgroundImage: `linear-gradient(${value})`,
+    }),
+
   },
   media: {
     bp1: "(min-width: 520px)",
@@ -159,10 +152,8 @@ export const theme4 = createTheme({
 });
 export const theme5  = createTheme({
   colors: {
-    primary: "$AliceBlue",
-    secondary: "$PrussianBlue",
-    button:"$AliceBlue",
-    background: "$SaphireBlue",
-    border: "$AliceBlue"
+    primary: "$PrussianBlue",
+    secondary: "$AliceBlue",
+    background: "$SaphireBlue"
   },
 });
