@@ -16,10 +16,9 @@
     "incremental": true,
     "paths": {
       "data/*":["./src/data/*"],
-      "api/*":["./src/api/*"],
       "components/*":["./src/components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/types"],
   "exclude": ["node_modules"]
 }
