@@ -1,4 +1,4 @@
-export interface Comments {
+export type Comments = {
   id: number;
   is_validate: boolean;
   created_at: Date;

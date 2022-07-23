@@ -1,8 +1,10 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import "../styles/global.css"
+import { globalStyles } from "../styles/globalStyle.css"
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+// Apply css style
+globalStyles();
+const MyApp:React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -14,3 +16,4 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     </>
   )
 }
+export default MyApp;
