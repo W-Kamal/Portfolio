@@ -81,11 +81,11 @@ Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871
     </a>
   </li>
   </br>  
-  <li>
+  <!-- <li>
     <a href="https://tailwindcss.com/">
       <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635202894/Github/Tailwindcss.png" width="16px" alt="Tailwind website link." /><span> Tailwind</span>
     </a>
-  </li>
+  </li> -->
   </br>  
   <li>
     <a href="https://supabase.io/">
