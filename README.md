@@ -1,8 +1,9 @@
 
-<div align="center"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635199620/Github/RAD_Logo.png" width="32" /> </div>
+<!-- <div align="center"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635199620/Github/RAD_Logo.png" width="32" /> </div> -->
 <h1 align="center">Welcome to my portfolio Repo!</h1>
 <div align="center">
-DESC
+In this project i planned to present a kind of showcase of some works built during my journey on the webdevelopment road.
+Feel free to give any feedbacks, with the sole condition that is kindly formulated. ;)
 </div>
 </br>
 <div align="center">
