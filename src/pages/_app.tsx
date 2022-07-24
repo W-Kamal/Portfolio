@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { globalStyles } from "../styles/globalStyle.css"
+import { globalStyles } from "@/styles/globalStyle.css"
 
 // Apply css style
 globalStyles();

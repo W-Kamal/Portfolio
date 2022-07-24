@@ -1,8 +1,8 @@
 import Image from "next/image";
 import AvatarImg from "/public/myFace.webp";
-import SocialLinks from "../components/SocialLinks";
-import Availability from "../components/Availability";
-import Btn from "../components/Button";
+import SocialLinks from "@/components/SocialLinks";
+import Availability from "@/components/Availability";
+import Btn from "@/components/Button";
 import {
   HeroStyled, 
   NavStyled, 
@@ -10,9 +10,7 @@ import {
   NameStyled,
   HeaderStyled,
   StyledHeaderTitle,
-  StyledHeaderSubtitle,
-  SocialWrapperStyled,
-  IconeStyled
+  StyledHeaderSubtitle
 } from "../styles/heroStyle.css";
 
 const Hero = () => {
@@ -32,7 +30,7 @@ const Hero = () => {
               overflow:"hidden"
             }}
           />
-          <NameStyled>Wardi Kamal</NameStyled>
+        <NameStyled>Wardi Kamal</NameStyled>
         </AvatarWrapperStyled>
         <SocialLinks/>
       </NavStyled>

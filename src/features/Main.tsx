@@ -1,4 +1,4 @@
-import ProjectSlider from "../components/Slider"
+import ProjectSlider from "@/components/Slider"
 
 const Main = () => {
   return (

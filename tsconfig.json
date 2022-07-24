@@ -14,9 +14,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
+    "baseUrl": ".",
     "paths": {
-      "data/*":["./src/data/*"],
-      "components/*":["./src/components/*"]
+      "@/data/*": ["src/data/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/features/*": ["src/features/*"],
+      "@/components/*": ["src/components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/types"],
