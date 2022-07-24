@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 
-import Hero from "@/features/Hero";
-import Main from "@/features/Main";
-import Footer from "@/features/Footer";
+import Hero from "@/components/Hero";
+import Main from "@/components/Main";
+import Footer from "@/components/Footer";
 import Button from "@/components/Button";
 import Availability from "@/components/Availability";
 import ProjectCarroussel from "@/components/Slider";

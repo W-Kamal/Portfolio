@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
-import Availability from "../components/Availability";
-import Btn from "../components/Button";
-import SocialLinks from "../components/SocialLinks";
+import Availability from "./Availability";
+import Btn from "./Button";
+import SocialLinks from "./SocialLinks";
 
 import en from '../locales/en';
 import fr from '../locales/fr';
