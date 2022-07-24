@@ -1,3 +1,4 @@
+// How to specify that i want to get an array of string options ?
 interface Props {
   stack: ["React.js"| "Vite.js"| "Node.js"|"Js"|"Html"|"Css"|"Express"|"Figma"|"Storybook"|"Redux"|"Redux Toolkit"|"Firebase"|"Supabase"|"Lighthouse"|"Jest"|"Zustand"|"ReCharts"|"Axios"|"Next.js"];
 };
@@ -46,7 +47,7 @@ prev(e) {
 */
 
 
-const ProjectCarroussel = () => {
+const Slider = () => {
   return (
     <div>
       <article className="project__wrapper">
@@ -57,4 +58,4 @@ const ProjectCarroussel = () => {
   )
 };
 
-export default ProjectCarroussel;
+export default Slider;

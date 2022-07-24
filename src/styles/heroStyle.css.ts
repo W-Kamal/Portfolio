@@ -31,7 +31,7 @@ export const SocialWrapperStyled = styled("div",{
   alignItems:"center",
   // marginInline: 1.5
 });
-export const IconeStyled = styled("a",{
+export const IconStyled = styled("a",{
   cursor:"pointer",
   color:"$secondary",
   rel:"noopener noreferrer",
