@@ -1,61 +1,93 @@
+import { styled } from '../../stitches.config';
+import { supabase } from '../lib/supabase';
+import { useState } from 'react';
+import { URL } from 'url';
+import { GetStaticProps } from 'next';
+
 // How to specify that i want to get an array of string options ?
-interface Props {
-  stack: ["React.js"| "Vite.js"| "Node.js"|"Js"|"Html"|"Css"|"Express"|"Figma"|"Storybook"|"Redux"|"Redux Toolkit"|"Firebase"|"Supabase"|"Lighthouse"|"Jest"|"Zustand"|"ReCharts"|"Axios"|"Next.js"];
+interface Project {
+  id: number;
+  created_at: Date;
+  title: string;
+  description: string;
+  type: 'Openclassrooms' | 'Training' | 'Client Project' | 'Tuto';
+  status: 'Completed' | 'Wip' | 'Standby' | 'Abandonned' | 'Rework Needed';
+  goal: string; // mettre les informations du goal dans la description
+  stack: string[];
+  is_published: boolean; // à replace par l'information donnée par le status
+  click_score: number; // *
+  thumbnail_path: URL;
+}
+interface ExternalLink {
+  repository_path: URL;
+  demo_path: URL;
 };
 
-interface Projects {
-  id: number,
-  created_at: Date,
-  started_date: Date,
-  ended_date: Date;
-  title: string;
-  name:string;
-  description: string;
-  type: "Openclassrooms" | "Training" | "Client Project" | "Tuto";
-  status: "Completed" | "Wip" | "Standby"|"Abandonned";
-  goal: string;
-  stack: string[];
-  is_published: boolean;
-  click_score:number;
-  paths : {
-    thumbnail_path: string;
-    repository_path: string;
-    demo_path: string;
-  }
-}
-
-// fetch data here ?
+export const SliderWrapper = styled('section', {});
+export const ProjectWrapper = styled('article', {});
 
 
-/* Lightbox Navigation function from P6
-next(e) {
-  e.preventDefault()
-  this.currentIndex++
-  if (this.currentIndex === this.srcList.length) {
-    this.currentIndex = 0
-  }
-  this.render(this.srcList[this.currentIndex])
-}
-prev(e) {
-  e.preventDefault()
-  this.currentIndex--
-  if (this.currentIndex < 0) {
-    this.currentIndex = this.srcList.length - 1
-  }
-  this.render(this.srcList[this.currentIndex])
-}
-*/
+// le nombre de click sur les liens (git ou démo ou articles qd il y aura)
 
+// génération statique : au moment de build
+// export const getStaticProps: GetStaticProps = async () => {
+  // const { data: projects} = await supabase
+  //   .from<Project>('projects')
+  //   .select('*');
+  
+//   return {
+//     props: {
+//       projects: [],
+//     },
+//   };
+// };
 
-const Slider = () => {
+// composant de pagination (dépendant de la réponse au fetch)
+// comptabiliser le nombre de click
+const Pagination = () => {
+  const [pageNumber, setPageNumber] = useState<number>();
+  const [projectScore, setProjectScore] = useState<number>();
   return (
     <div>
-      <article className="project__wrapper">
-        <div className="project__view"></div>
-        <div className="project__summary"></div>
-      </article>
+      <span>-1</span>
+      {/* Afficher l'indicateur de position de la slide */}
+      {/* <div></div> */}
+      <span>+1</span>
     </div>
-  )
+  );
+};
+
+
+// const Slider = ({...props}:Project, {stack}:ExternalLink) => {
+const Slider = () => {
+  // maper les projets + rendu conditionnel des informations et des links (e.g. démo)
+  return (
+    // intégrer dans les ::before/::after des icones ou marqueurs
+    <SliderWrapper>
+      {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
+      {/* Mettre la thumbnail en background du wrapper ? */}
+
+      <ProjectWrapper className='project__wrapper'>
+        <div className='project__summary'>
+          <div className='project__info'>
+            <h3 className='title'></h3>
+            <h4 className='name'></h4>
+            <span className='date_creation'></span>
+            <p className='description'></p>
+            <span className='type'></span>
+            <div className='links_container'>
+              <span className='status'></span>
+            </div>
+          </div>
+          {/* map des stack */}
+          <div className='project__stack'></div>
+          {/* map des stack */}
+          <div className='project__link'></div>
+        </div>
+      </ProjectWrapper>
+      {/* <Pagination></Pagination> */}
+    </SliderWrapper>
+  );
 };
 
 export default Slider;
