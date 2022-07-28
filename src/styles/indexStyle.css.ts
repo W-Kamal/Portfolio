@@ -14,10 +14,4 @@ export const Pagewrapper = styled('div',{
 //   flexDirection:'column',
 //   marginY:3
 // })
-export const Mainwrapper = styled('div',{
-  height:"15rem"
-})
-export const FooterWrapper = styled("footer",{
-  display:'flex',
-  flexDirection:'row'
-})
+

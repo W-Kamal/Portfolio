@@ -21,8 +21,8 @@ export const NameStyled = styled("span",{
   fontSize:"$5"
 });
 export const HeaderStyled = styled("div",{});
-export const StyledHeaderTitle = styled("h1",{});
-export const StyledHeaderSubtitle = styled("p",{});
+export const StyledHeadline = styled("h1",{});
+export const StyledHeadSubtitle = styled("p",{});
 export const SocialWrapperStyled = styled("div",{
   display:"flex",
   width:"7rem",
