@@ -1,10 +1,10 @@
-import type { AppProps } from 'next/app'
+import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import Head from 'next/head'
-import { globalStyles } from "@/styles/globalStyle.css"
+import { globalStyles } from "../../stitches.config"
 
-// Apply css style
+// Applying a piece of reset on css style
 globalStyles();
-const MyApp:React.FC<AppProps> = ({ Component, pageProps }) => {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -16,4 +16,10 @@ const MyApp:React.FC<AppProps> = ({ Component, pageProps }) => {
     </>
   )
 }
+
+// Log some stats
+export function reportWebVitals(metric:NextWebVitalsMetric) {
+  console.log(metric)
+}
+
 export default MyApp;
