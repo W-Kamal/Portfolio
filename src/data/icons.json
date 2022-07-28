@@ -1,0 +1,196 @@
+{
+  "icons": [
+    {
+      "title":"twitter icon",
+      "href":"twitter.com/MozaiK_K",
+      "traget":"_blank",
+      "iconRef":"FaTwitter"
+    },
+    {
+      "title":"linkedin icon",
+      "href":"www.linkedin.com/in/kamal-wardi/",
+      "traget":"_blank",
+      "iconRef":"FaLinkedinIn"
+    },
+    {
+      "title":"github icon",
+      "href":"github.com/WARDI-Kamal",
+      "traget":"_blank",
+      "iconRef":"FaGithub"
+    },
+    {
+      "title":"React.js",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Vite.js",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Node.js",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Javascript",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"HTML",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"CSS",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Express",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Figma",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Storybook",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Redux",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Redux Toolkit",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"React Query",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Zustand",
+      "href":"",
+      "iconRef":""
+    },{
+      "title":"Recoil",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"MobX",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Firebase",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Supabase",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Lighthouse",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Jest",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Cypress",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"React Testing Library",
+      "href":"testing-library.com",
+      "iconRef":""
+    },
+    {
+      "title":"Playwright",
+      "href":"playwright.dev/",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"D3",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"ReCharts",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"Axios",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    {
+      "title":"",
+      "href":"",
+      "iconRef":""
+    },
+    
+    | ''
+    | 'Supabase'
+    | ''
+    | 'Jest'
+    | 'Zustand'
+    | 'ReCharts'
+    | 'Axios'
+    | 'Next.js'
+  ]
+}
+

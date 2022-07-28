@@ -1,6 +1,7 @@
+export {};
 /**
  * SUPABASE TABLES
- * 
+ *
  * dev_logs : articles that will be written during development.
  * ext_ressources : links of ressources that will be used in to write articles.
  * images : images that will be used to present myself, projects and articles.
@@ -35,37 +36,36 @@
 
 // build a json file for each project with all the data needed to build the website
 
+// export async function getStaticProps(url:string) {
+//   const res = await fetch(url)
+//   const projects = await res.json()
 
-export async function getStaticProps(url:string) {
-  const res = await fetch(url)
-  const projects = await res.json()
-
-  return {
-    props:{
-      projects
-    }
-  }
-}
+//   return {
+//     props:{
+//       projects
+//     }
+//   }
+// }
 
 // helpers functions
-const getRequest = async (url:string) => {
-  const res = await fetch(url)
-  return res.json()
-}
+// const getRequest = async (url:string) => {
+//   const res = await fetch(url)
+//   return res.json()
+// }
 
 // Pour sauvegarder des stats du site et/ou les commentaires
-const postRequest = async (url:string, body:string) => {
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      body
-    })
-  })
-  return await res.json()
-}
+// const postRequest = async (url:string, body:string) => {
+//   const res = await fetch(url, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//       body
+//     })
+//   })
+//   return await res.json()
+// }
 
 // const getAllProjects = (apiUrl) => {
 //   // return getRequest('/projects')
@@ -75,11 +75,11 @@ const postRequest = async (url:string, body:string) => {
 /**
  * Cette abstraction peut être utile
  * à utiliser dans un useEffect par ex
- * 
+ *
  * const [projects, setProjects] = useState([])
- * 
+ *
  * const useEffect(()=>{
  *  getAllProjects(url).then(setProjects)
  * }, [])
- * 
+ *
  */
