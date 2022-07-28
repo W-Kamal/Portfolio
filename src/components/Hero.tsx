@@ -9,8 +9,8 @@ import {
   AvatarWrapperStyled, 
   NameStyled,
   HeaderStyled,
-  StyledHeaderTitle,
-  StyledHeaderSubtitle
+  StyledHeadline,
+  StyledHeadSubtitle
 } from "../styles/heroStyle.css";
 
 const Hero = () => {
@@ -36,12 +36,12 @@ const Hero = () => {
       </NavStyled>
 
       <HeaderStyled>
-        <StyledHeaderTitle>Donner du sens aux projets</StyledHeaderTitle>
-        {/* <StyledTitle>Let's give meaning to your projects</StyledTitle> */}
-        {/* <StyledSubtitle>I build frontend solution for your projects</StyledSubtitle> */}
-        <StyledHeaderSubtitle>
+        <StyledHeadline>Donner du sens aux projets</StyledHeadline>
+        {/* <StyledHeadline>Let's give meaning to your projects</StyledHeadline> */}
+        {/* <StyledHeadSubtitle>I build frontend solution for your projects</StyledHeadSubtitle> */}
+        <StyledHeadSubtitle>
           Je suis sur la voie du développeur Font-end Applicatif, je veux monter en compétences et créer des solutions.
-        </StyledHeaderSubtitle>
+        </StyledHeadSubtitle>
       </HeaderStyled>
 
       <Availability />
