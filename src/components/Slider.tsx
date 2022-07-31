@@ -2,7 +2,7 @@ import { styled } from '../../stitches.config';
 import { supabase } from '../lib/supabase';
 import { useState } from 'react';
 import { URL } from 'url';
-import { GetStaticProps } from 'next';
+import { GetStaticProps, GetServerSideProps } from 'next';
 
 // How to specify that i want to get an array of string options ?
 interface Project {
@@ -29,19 +29,18 @@ export const ProjectWrapper = styled('article', {});
 
 // le nombre de click sur les liens (git ou démo ou articles qd il y aura)
 
-// génération statique : au moment de build
-// export const getStaticProps: GetStaticProps = async () => {
-  // const { data: projects} = await supabase
-  //   .from<Project>('projects')
-  //   .select('*');
+// SSR : au moment de build
+export const getServerSideProps: GetServerSideProps = async () => {
+  const { data: projects} = await supabase
+    .from<Project>('projects')
+    .select('*');
   
-//   return {
-//     props: {
-//       projects: [],
-//     },
-//   };
-// };
-
+  return {
+    props: {
+      projects: [],
+    },
+  };
+};
 // composant de pagination (dépendant de la réponse au fetch)
 // comptabiliser le nombre de click
 const Pagination = () => {
