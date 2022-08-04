@@ -2,14 +2,12 @@
 <!-- <div align="center"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635199620/Github/RAD_Logo.png" width="32" /> </div> -->
 <h1 align="center">Welcome to my portfolio Repo!</h1>
 <div align="center">
-In this project i planned to present a kind of showcase of some works built during my journey on the webdevelopment road.
+In this project i planned to present a sort of showcase of some works built during my journey on the webdevelopment road.
 Feel free to give any feedbacks, with the sole condition that is kindly formulated. ;)
 </div>
 </br>
 <div align="center">
-  <a href="https://twitter.com/MozaiK_K">
-    <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200716/Github/twitter.svg" width="32px" alt="A link to our Twitter page." />
-  </a>  
+  <!-- <a href="https://twitter.com/MozaiK_K"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200716/Github/twitter.svg" width="32px" alt="A link to our Twitter page." /></a> -->
     <a href="https://www.twitch.tv/d0natelll0">
     <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200797/Github/twitch.svg" width="32px" alt="A link to our Twitch page." />
   </a>  
