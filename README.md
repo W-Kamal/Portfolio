@@ -1,22 +1,24 @@
-
 <!-- <div align="center"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635199620/Github/RAD_Logo.png" width="32" /> </div> -->
 <h1 align="center">Welcome to my portfolio Repo!</h1>
 <div align="center">
 In this project i planned to present a sort of showcase of some works built during my journey on the webdevelopment road.
-Feel free to give any feedbacks, with the sole condition that is kindly formulated. ;)
+Feel free to give any feedbacks, with one condition that is kindly formulated. ;)
 </div>
 </br>
-<div align="center">
-  <!-- <a href="https://twitter.com/MozaiK_K"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200716/Github/twitter.svg" width="32px" alt="A link to our Twitter page." /></a> -->
-    <a href="https://www.twitch.tv/d0natelll0">
-    <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200797/Github/twitch.svg" width="32px" alt="A link to our Twitch page." />
-  </a>  
-    <a href="https://www.linkedin.com/in/kamal-wardi/">
-    <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200978/Github/LinkedIn.svg" width="32px" alt="A link to our LinkedIn page." />
-  </a>
-</div>
+<!--
+  <div align="center">
+    <a href="https://twitter.com/MozaiK_K"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200716/Github/twitter.svg" width="32px" alt="A link to our Twitter page." /></a> 
+      <a href="https://www.twitch.tv/d0natelll0">
+      <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200797/Github/twitch.svg" width="32px" alt="A link to our Twitch page." />
+    </a>  
+      <a href="https://www.linkedin.com/in/kamal-wardi/">
+      <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200978/Github/LinkedIn.svg" width="32px" alt="A link to our LinkedIn page." />
+    </a>
+  </div>
+-->
 
 ## About This Repository
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Getting Started
@@ -36,10 +38,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 Check out the demo [kamal-wardi-portfolio](https://vercel.com/wardi-kamal/kamal-wardi-portfolio/FSU2ST1nFkFyEkwBtpsr1Ce1Cex9) to see it !
 
 ## Project Structure
+
 Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871de44a02ac15b6b37da2f518) to see detailed informations !
 
-
 ### Tests to implement
+
 <ul>
   <li>test if numbers are correctly parsed if they are passed as strings</li>
   <li>test if data are correctly pulled from the database</li>
@@ -78,13 +81,7 @@ Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871
       <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635202536/Github/Typescript.svg" width="16px" alt="TypeScript website link." /><span> TypeScript</span>
     </a>
   </li>
-  </br>  
-  <!-- <li>
-    <a href="https://tailwindcss.com/">
-      <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635202894/Github/Tailwindcss.png" width="16px" alt="Tailwind website link." /><span> Tailwind</span>
-    </a>
-  </li> -->
-  </br>  
+  </br>
   <li>
     <a href="https://supabase.io/">
       <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635203209/Github/Supabase.svg" width="16px" alt="Supabase website link." /><span> Supabase</span>
