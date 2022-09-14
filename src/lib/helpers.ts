@@ -1,4 +1,14 @@
-export {};
+// request data from API, test response and return data
+export const getData = async (url:string) => {
+  try {
+    const res = await fetch(url)
+    const data = res.json()
+
+    return data
+  } catch (error:any) {
+    console.error(error.status)
+  }
+}
 /**
  * SUPABASE TABLES
  *

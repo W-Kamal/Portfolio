@@ -1,32 +1,44 @@
+import { supabase } from '../lib/supabaseClient';
+import { GetStaticProps, GetServerSideProps, NextPage } from 'next';
+import { Project } from '@/lib/Types';
+
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
-import Slider from '@/components/Slider';
+import ProjectWrapper from '@/components/ProjectWrapper';
 
 import { theme1, theme2, theme3, theme4, theme5 } from '../../stitches.config';
-import { Pagewrapper } from '@/styles/indexStyle.css';
 import {
-  Mainwrapper,
-  SliderWrapper,
-  ProjectWrapper,
-  AboutSectionStyled,
-} from '@/styles/mainStyle.css';
+  PageWrapper,
+  MainWrapper,
+  AboutWrapper,
+} from '@/styles/indexStyle.css';
 
-import { NextPage } from 'next';
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { data: projects, error } = await supabase
+    .from<Project>('projects')
+    .select('*')
+    .order('id');
 
-const Home: NextPage = () => {
+  return {
+    props: {
+      projects,
+    },
+  };
+};
+
+const Home: NextPage = ({ projects }: any) => {
+  console.log(`projects : `, projects);
+  console.log(`type projects : `, typeof projects);
   return (
-    <Pagewrapper className={theme5}>
+    <PageWrapper className={theme4}>
       <Hero />
-      <Mainwrapper>
-        <p>Hello</p>
-        <SliderWrapper>
-          {/* <ProjectWrapper></ProjectWrapper> */}
-          <Slider />
-        </SliderWrapper>
-        <AboutSectionStyled></AboutSectionStyled>
-      </Mainwrapper>
+      <MainWrapper>
+        <pre>{JSON.stringify(projects, null, 2)}</pre>
+        <ProjectWrapper projects={projects} />
+        <AboutWrapper></AboutWrapper>
+      </MainWrapper>
       <Footer />
-    </Pagewrapper>
+    </PageWrapper>
   );
 };
 export default Home;

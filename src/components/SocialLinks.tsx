@@ -1,31 +1,13 @@
 import Link from 'next/link';
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
 import { SocialWrapperStyled, IconStyled } from '@/styles/heroStyle.css';
-import { Url } from 'url';
 
-// interface LinkProps {
+// Type LinkProps = {
 //   title: string;
 //   href: Url;
 //   iconRef: string;
 // }
 
-const iconList = [
-  {
-    title: 'twitter icon',
-    href: 'https://twitter.com/MozaiK_K',
-    iconRef: 'FaTwitter',
-  },
-  {
-    title: 'linkedin icon',
-    href: 'https://www.linkedin.com/in/kamal-wardi/',
-    iconRef: 'FaLinkedinIn',
-  },
-  {
-    title: 'github icon',
-    href: 'https://github.com/WARDI-Kamal',
-    iconRef: 'FaGithub',
-  }
-];
 
 // comment appliquer un style global aux react-icons ?
 // est-ce que mettre les data en context est pertinent...?
