@@ -26,7 +26,11 @@ function formatDate(strDate: string): string {
     year: 'numeric',
   }).format(date);
 }
-const ProjectWrapper = ({ projects }: { projects: Project }) => {
+const ProjectWrapper = ({
+  projects,
+}: {
+  projects: Project[];
+}): ReactElement => {
   console.log(`projects Props : `, projects);
   console.log(`Typeof projects Props : `, typeof projects);
   // console.log(`date : `, projectList[0].created_at)

@@ -13,7 +13,7 @@ import {
   AboutWrapper,
 } from '@/styles/indexStyle.css';
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   const { data: projects, error } = await supabase
     .from<Project>('projects')
     .select('*')
@@ -26,14 +26,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   };
 };
 
-const Home: NextPage = ({ projects }: any) => {
-  console.log(`projects : `, projects);
-  console.log(`type projects : `, typeof projects);
+const Home = ({ projects }: { projects: Project[] }) => {
+  // console.log(`projects : `, projects);
+  // console.log(`type projects : `, typeof projects);
   return (
     <PageWrapper className={theme4}>
       <Hero />
       <MainWrapper>
-        <pre>{JSON.stringify(projects, null, 2)}</pre>
+        {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
         <ProjectWrapper projects={projects} />
         <AboutWrapper></AboutWrapper>
       </MainWrapper>
