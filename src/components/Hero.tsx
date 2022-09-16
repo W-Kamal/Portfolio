@@ -30,7 +30,7 @@ const Hero = () => {
               overflow: 'hidden',
             }}
           />
-          <NameStyled>Wardi Kamal</NameStyled>
+          <NameStyled>Kamal</NameStyled>
         </AvatarWrapperStyled>
         <SocialLinks />
       </NavStyled>

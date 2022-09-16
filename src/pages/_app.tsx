@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>WARDI Kamal</title>
-        <meta name='description' content='wardi Kamal portfolio' />
+        <title>Kamal</title>
+        <meta name='description' content='Kamal portfolio' />
         <link rel='icon' href='/favicon.png' />
       </Head>
       <Component {...pageProps} />
