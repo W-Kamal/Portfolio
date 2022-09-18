@@ -1,13 +1,10 @@
-// request data from API, test response and return data
-export const getData = async (url:string) => {
-  try {
-    const res = await fetch(url)
-    const data = res.json()
+import { supabase } from "./supabaseClient";
 
-    return data
-  } catch (error:any) {
-    console.error(error.status)
-  }
+export {}
+
+export const getOrderedData = (table:string) => {
+  const { data } = supabase.from(table).select('*').order('id');
+  return data
 }
 /**
  * SUPABASE TABLES
@@ -19,14 +16,6 @@ export const getData = async (url:string) => {
  * comments : list of comments that will be written any message features.
  * traductions : list of traductions of all contents in the website.
  * urls : list of urls of projects or articles.
- */
-
-/**
- * get all projects from supabase table
- */
-
-/**
- * get all urls for a given project from supabase table
  */
 
 /**
@@ -44,25 +33,6 @@ export const getData = async (url:string) => {
  * get localizations of descriptions/name/alt/purpose from supabase table for a given project
  */
 
-// build a json file for each project with all the data needed to build the website
-
-// export async function getStaticProps(url:string) {
-//   const res = await fetch(url)
-//   const projects = await res.json()
-
-//   return {
-//     props:{
-//       projects
-//     }
-//   }
-// }
-
-// helpers functions
-// const getRequest = async (url:string) => {
-//   const res = await fetch(url)
-//   return res.json()
-// }
-
 // Pour sauvegarder des stats du site et/ou les commentaires
 // const postRequest = async (url:string, body:string) => {
 //   const res = await fetch(url, {
@@ -77,19 +47,3 @@ export const getData = async (url:string) => {
 //   return await res.json()
 // }
 
-// const getAllProjects = (apiUrl) => {
-//   // return getRequest('/projects')
-//   // return postRequest('/projects' ou apiUrl,{text:'hello'})
-// }
-
-/**
- * Cette abstraction peut être utile
- * à utiliser dans un useEffect par ex
- *
- * const [projects, setProjects] = useState([])
- *
- * const useEffect(()=>{
- *  getAllProjects(url).then(setProjects)
- * }, [])
- *
- */

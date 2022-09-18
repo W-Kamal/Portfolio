@@ -11,7 +11,7 @@ export type Project = {
   stackArr: string[];
   is_published: boolean; // à replace par l'information donnée par le status
   click_score: number; // *
-  thumbnail_path: URL;
+  thumbnail_path: string;
 };
 export type ExternalLink = {
   repository_path: URL;

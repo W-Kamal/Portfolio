@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabaseClient';
-import { GetStaticProps, GetServerSideProps, NextPage } from 'next';
+import { GetStaticProps } from 'next';
 import { Project } from '@/lib/Types';
 
 import Hero from '@/components/Hero';
@@ -26,9 +26,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Home = ({ projects }: { projects: Project[] }) => {
-  console.log(`projects : `, projects);
-  // console.log(`type projects : `, typeof projects);
+const Home = ({projects,}: {projects: Project[]}) => {
   return (
     <PageWrapper className={theme4}>
       <Hero />
