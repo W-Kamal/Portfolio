@@ -27,7 +27,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Home = ({ projects }: { projects: Project[] }) => {
-  // console.log(`projects : `, projects);
+  console.log(`projects : `, projects);
   // console.log(`type projects : `, typeof projects);
   return (
     <PageWrapper className={theme4}>
