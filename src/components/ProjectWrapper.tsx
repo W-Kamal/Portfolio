@@ -8,6 +8,7 @@ import {
   ReactPortal,
   useEffect,
 } from 'react';
+import Image from 'next/image';
 
 const Wrapper = styled('div', {});
 const ProjectView = styled('article', {
@@ -15,6 +16,7 @@ const ProjectView = styled('article', {
 });
 
 // le nombre de click sur les liens (git ou démo ou articles qd il y aura)
+
 function getArrayFromString(str: string): string[] {
   return str.split(', ');
 }
@@ -26,22 +28,20 @@ function formatDate(strDate: string): string {
     year: 'numeric',
   }).format(date);
 }
-const ProjectWrapper = ({
-  projects,
-}: {
-  projects: Project[];
-}): ReactElement => {
-  console.log(`projects Props : `, projects);
-  console.log(`Typeof projects Props : `, typeof projects);
-  // console.log(`date : `, projectList[0].created_at)
-  // console.log(`date type : `, typeof(projectList[0].created_at))
-  // console.log(`formated date : `, formatDate(projectList[0].created_at))
-
+const ProjectWrapper = ({projects}: {projects: Project[]}): ReactElement => {
   return (
     <Wrapper>
       {projects &&
         projects.map((project) => (
           <ProjectView className='project__view' key={project.id}>
+            <Image
+              src={project.thumbnail_path}
+              alt="Hello, it's my face"
+              title='Hey there !'
+              width={58}
+              height={58}
+              objectFit='cover'
+            />
             <div className='project__summary'>
               <div className='project__info'>
                 <h3 className='title'>{project.title}</h3>
@@ -57,7 +57,7 @@ const ProjectWrapper = ({
               </div>
               <div className='project__stack'>
                 {getArrayFromString(project.stack).map((item: string) => (
-                  <span key={item}>{item}, </span>
+                  <span key={item}>{item} </span>
                 ))}
               </div>
               <div className='project__link'></div>
