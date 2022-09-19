@@ -1,22 +1,14 @@
 import { supabase } from "./supabaseClient";
 
-export {}
-
-export const getOrderedData = (table:string) => {
-  const { data } = supabase.from(table).select('*').order('id');
-  return data
+export function formatDate(strDate: string): string {
+  const date: Date = new Date(strDate);
+  return new Intl.DateTimeFormat('fr-FR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  }).format(date);
 }
-/**
- * SUPABASE TABLES
- *
- * dev_logs : articles that will be written during development.
- * ext_ressources : links of ressources that will be used in to write articles.
- * images : images that will be used to present myself, projects and articles.
- * projects : list of projects that will be presented in the website.
- * comments : list of comments that will be written any message features.
- * traductions : list of traductions of all contents in the website.
- * urls : list of urls of projects or articles.
- */
+
 
 /**
  * get dev_logs from supabase table for a given project

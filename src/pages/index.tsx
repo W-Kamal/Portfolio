@@ -12,6 +12,7 @@ import {
   MainWrapper,
   AboutWrapper,
 } from '@/styles/indexStyle.css';
+import { getOrderedProjects } from '@/lib/services';
 
 export const getStaticProps: GetStaticProps = async () => {
   const { data: projects, error } = await supabase
@@ -26,7 +27,7 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Home = ({projects,}: {projects: Project[]}) => {
+const Home = ({ projects }: { projects: Project[] }) => {
   return (
     <PageWrapper className={theme4}>
       <Hero />
