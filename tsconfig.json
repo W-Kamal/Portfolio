@@ -2,12 +2,16 @@
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "noEmit": true,
     "moduleResolution": "node",
@@ -16,12 +20,27 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/data/*": ["src/data/*"],
-      "@/lib/*": ["src/lib/*"],
-      "@/locales/*": ["src/locales/*"],
-      "@/pages/*": ["src/pages/*"],
-      "@/styles/*": ["src/styles/*"]
+      "@/components/*": [
+        "src/components/*"
+      ],
+      "@/data/*": [
+        "src/data/*"
+      ],
+      "@/lib/*": [
+        "src/lib/*"
+      ],
+      "@/locales/*": [
+        "src/locales/*"
+      ],
+      "@/pages/*": [
+        "src/pages/*"
+      ],
+      "@/styles/*": [
+        "src/styles/*"
+      ],
+      "@/utils/*": [
+        "src/utils/*"
+      ]
     }
   },
   "include": [
@@ -31,5 +50,7 @@
     "src/types",
     "src/pages/index.jsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

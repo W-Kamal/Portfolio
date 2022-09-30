@@ -1,20 +1,33 @@
 import { supabase } from '../lib/supabaseClient';
-import { GetStaticProps } from 'next';
-import { Project } from '@/lib/Types';
+import { GetServerSideProps } from 'next';
+import { Project } from 'src/Types/index';
 
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
 import ProjectWrapper from '@/components/ProjectWrapper';
 
+import { styled } from '../../stitches.config';
 import { theme1, theme2, theme3, theme4, theme5 } from '../../stitches.config';
-import {
-  PageWrapper,
-  MainWrapper,
-  AboutWrapper,
-} from '@/styles/indexStyle.css';
-import { getOrderedProjects } from '@/lib/services';
 
-export const getStaticProps: GetStaticProps = async () => {
+
+// Styling - Comment styliser la scrollbar ?
+const PageWrapper = styled('div', {
+  height: '100vh',
+  overflowX: 'hidden',
+  // overflowY:"scroll",
+  // color:'$primary',
+  backgroundColor: '$background',
+  paddingX: 2,
+});
+
+const MainWrapper = styled('div', {
+  height: 'max-content',
+});
+const AboutWrapper = styled('div', {});
+
+
+
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data: projects, error } = await supabase
     .from<Project>('projects')
     .select('*')
