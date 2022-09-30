@@ -1,3 +1,5 @@
+import { Url } from "url";
+
 export type Project = {
   id: number;
   created_at: string;
@@ -5,13 +7,13 @@ export type Project = {
   description: string;
   type: ProjectType;
   status: Status;
-  objective: string;
+  objective: string | null;
   stack: string;
   stackArr: string[]; // Not used
   is_released: boolean;
   thumbnail_url: string;
-  repository_url: string;
-  live_url: string;
+  repository_url?: Url;
+  live_url?: Url;
 };
 
 enum ProjectType {
