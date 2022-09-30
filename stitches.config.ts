@@ -1,6 +1,12 @@
 import { globalCss, createStitches, createTheme } from "@stitches/react";
 
 export const globalStyles = globalCss({
+  'html':{
+    webkitTextSizeAdjust:'none',
+    webkitFontSmoothing:'antialiased',
+    cursor:'default',
+    webkitTapHighlightColor:'transparent'
+  },
   '*':{
     boxSizing: 'border-box'
   },
@@ -10,6 +16,17 @@ export const globalStyles = globalCss({
   'a':{
     color: 'inherit',
     textDecoration : 'none'
+  },
+  [`li, ul`]: {
+    listStyle:'none'
+  },
+  [`a, body, div, footer, h1, h2, header, html, img, li, nav, p, span, ul`]:{
+    margin:0,
+    padding: 0,
+    textIndent: 0,
+    border:0,
+    font:'inherit',
+    fontSize:'100%',
   }
 });
 
