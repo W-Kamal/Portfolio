@@ -8,23 +8,20 @@ import { SocialWrapperStyled, IconStyled } from '@/styles/heroStyle.css';
 //   iconRef: string;
 // }
 
-
-// comment appliquer un style global aux react-icons ?
-// est-ce que mettre les data en context est pertinent...?
 const SocialLinks = () => {
   return (
     <SocialWrapperStyled>
-      <Link href='https://twitter.com/MozaiK_K' passHref>
+      {/* <Link href='https://twitter.com/MozaiK_K' passHref>
         <IconStyled target='_blank'>
           {<FaTwitter title='twitter icon' />}
         </IconStyled>
-      </Link>
+      </Link> */}
       <Link href='https://www.linkedin.com/in/kamal-wardi/' passHref>
         <IconStyled target='_blank'>
           {<FaLinkedinIn title='linkedin icon' />}
         </IconStyled>
       </Link>
-      <Link href='https://github.com/WARDI-Kamal' passHref>
+      <Link href='https://github.com/W-Kamal' passHref>
         <IconStyled target='_blank'>
           {<FaGithub title='github icon' />}
         </IconStyled>
@@ -34,19 +31,3 @@ const SocialLinks = () => {
 };
 
 export default SocialLinks;
-
-// const IconLinks = ({ ...props }: LinkProps) => {
-//   return (
-//     <SocialWrapperStyled>
-//       {iconList.map(()=>
-//         <Link href={iconList.href} passHref>
-//         <IconStyled target='_blank'>
-//           {<{props.iconRef} title={iconList.title} />}
-//         </IconStyled>
-//       </Link>        
-//       )}
-//     </SocialWrapperStyled>
-//   );
-// };
-
-// export default IconLinks;

@@ -26,7 +26,6 @@ const MainWrapper = styled('div', {
 const AboutWrapper = styled('div', {});
 
 
-
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: projects, error } = await supabase
     .from<Project>('projects')
@@ -41,11 +40,13 @@ export const getServerSideProps: GetServerSideProps = async () => {
 };
 
 const Home = ({ projects }: { projects: Project[] }) => {
+
   return (
     <PageWrapper className={theme4}>
       <Hero />
       <MainWrapper>
         {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
+
         <ProjectWrapper projects={projects} />
         <AboutWrapper></AboutWrapper>
       </MainWrapper>
