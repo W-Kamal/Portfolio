@@ -1,9 +1,9 @@
+import React from 'react';
 import { supabase } from '../lib/supabaseClient';
-import { GetServerSideProps } from 'next';
 
-import Hero from '@/components/Hero';
-import Footer from '@/components/Footer';
-import { Project } from '@/components/Project';
+import { Hero } from '../components/Hero';
+import { Footer } from '../components/Footer';
+import { Project } from '../components/Project';
 
 import { styled } from '../../stitches.config';
 import { theme1, theme2, theme3, theme4, theme5 } from '../../stitches.config';
@@ -46,7 +46,7 @@ const Home = ({ projects }) => {
       <MainWrapper>
         {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
 
-        {/* <Project projects={projects} /> */}
+        <Project props={projects} />
         <AboutWrapper></AboutWrapper>
       </MainWrapper>
       <Footer />

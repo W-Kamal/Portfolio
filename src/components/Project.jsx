@@ -21,10 +21,11 @@ const View = styled('article', {
 
 
 export const Project = ({ props }) => {
-  const { id, created_at, title, description, type, status, objective, stack, is_released, thumbnail_url, repository_url, live_url } = { ...props }
+  console.log(`props : `, props)
+  // const { id, created_at, title, description, type, status, objective, stack, is_released, thumbnail_url, repository_url, live_url } = { ...props }
   return (
     <>
-      <View className='project__view' key={id}>
+      {/* <View className='project__view' key={id}>
         <Image
           src={thumbnail_url}
           blurDataURL={thumbnail_url}
@@ -36,9 +37,6 @@ export const Project = ({ props }) => {
         <div className='project__summary'>
           <div className='project__info'>
             <h3 className='title'>{title}</h3>
-            <span className='date_creation'>
-              {formatDate(created_at)}
-            </span>
             <p className='description'>{description}</p>
             <span className='type'>{type}</span>
             <span className='status'>{status}</span>
@@ -65,7 +63,7 @@ export const Project = ({ props }) => {
             )}
           </ul>
         </div>
-      </View>
+      </View> */}
     </>
   );
 };

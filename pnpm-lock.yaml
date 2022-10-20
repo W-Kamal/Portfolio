@@ -3,6 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   '@stitches/react': ^1.2.8
   '@supabase/supabase-js': ^1.35.4
+  '@types/node': ^18.0.6
+  '@types/react': 18.0.15
+  '@types/react-dom': 18.0.6
   autoprefixer: ^10.4.7
   eslint: 8.19.0
   eslint-config-next: 12.2.2
@@ -19,6 +22,9 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
+  '@types/node': 18.11.3
+  '@types/react': 18.0.15
+  '@types/react-dom': 18.0.6
   autoprefixer: 10.4.7_postcss@8.4.14
   eslint: 8.19.0
   eslint-config-next: 12.2.2_4x5o4skxv6sl53vpwefgt23khm
@@ -297,9 +303,35 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
+  /@types/node/18.11.3:
+    resolution: {integrity: sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==}
+    dev: true
+
   /@types/phoenix/1.5.4:
     resolution: {integrity: sha512-L5eZmzw89eXBKkiqVBcJfU1QGx9y+wurRIEgt0cuLH0hwNtVUxtx+6cu0R2STwWj468sjXyBYPYDtGclUd1kjQ==}
     dev: false
+
+  /@types/prop-types/15.7.5:
+    resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+    dev: true
+
+  /@types/react-dom/18.0.6:
+    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+    dependencies:
+      '@types/react': 18.0.15
+    dev: true
+
+  /@types/react/18.0.15:
+    resolution: {integrity: sha512-iz3BtLuIYH1uWdsv6wXYdhozhqj20oD4/Hk2DNXIn1kFsmp9x8d9QB6FnPhfkbhd2PgEONt9Q1x/ebkwjfFLow==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: true
 
   /@typescript-eslint/parser/5.30.7_4x5o4skxv6sl53vpwefgt23khm:
     resolution: {integrity: sha512-Rg5xwznHWWSy7v2o0cdho6n+xLhK2gntImp0rJroVVFkcYFYQ8C8UJTSuTw/3CnExBmPjycjmUJkxVmjXsld6A==}
@@ -570,6 +602,10 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
+    dev: true
+
+  /csstype/3.1.1:
+    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
     dev: true
 
   /d/1.0.1:

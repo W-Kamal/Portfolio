@@ -35,7 +35,7 @@ Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871
 <ul>
   <li>
     <a href="https://nextjs.org/">
-      <img src="https://nextjs.org/static/favicon/android-chrome-192x192.png" width="16px" alt="Next.js website link." /><span> Next.js</span>
+      <img src="https://nextjs.org/static/favicon/android-chrome-192x192.png" width="16px" alt="Next.js website link" /><span> Next.js</span>
     </a>
   </li>
   </br>
@@ -43,13 +43,7 @@ Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871
     <a href="https://vercel.com/home?utm_source=youarerad&utm_campaign=oss">
       <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635262499/Github/vercel-icon-dark_pdka2i.svg" width="16px" alt="Vercel website link." /><span> Vercel</span>
     </a>
-  </li>
-  </br>
-  <li>
-    <a href="https://www.typescriptlang.org/">
-      <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635202536/Github/Typescript.svg" width="16px" alt="TypeScript website link." /><span> TypeScript</span>
-    </a>
-  </li>
+  </li>  
   </br>
   <li>
     <a href="https://supabase.io/">

@@ -1,12 +1,7 @@
+import React from 'react';
 import Link from 'next/link';
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
-import { SocialWrapperStyled, IconStyled } from '@/styles/heroStyle.css';
-
-// Type LinkProps = {
-//   title: string;
-//   href: Url;
-//   iconRef: string;
-// }
+import { SocialWrapperStyled, IconStyled } from '../styles/heroStyle.css';
 
 const SocialLinks = () => {
   return (

@@ -12,9 +12,9 @@ export function formatDate(strDate) {
 export const getArrayFromString = (str, separator) => {
   return str.split(separator);
 }
-export const swip = () => {}
+export const swip = () => { }
 
-export const getStartingIndex = (children, defaultIndex)=> {
+export const getStartingIndex = (children, defaultIndex) => {
   if (defaultIndex && defaultIndex < React.Children.count(children)) {
     return defaultIndex;
   }

@@ -1,9 +1,10 @@
-import type { AppProps, NextWebVitalsMetric } from 'next/app';
+import React from 'react';
 import Head from 'next/head';
 import { globalStyles } from '../../stitches.config';
 
 // Applying a piece of reset on css style
 globalStyles();
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
