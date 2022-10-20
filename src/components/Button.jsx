@@ -1,3 +1,4 @@
+import React from "react";
 import { styled } from "../../stitches.config";
 
 
@@ -24,14 +25,10 @@ const BtnStyled = styled("button", {
   }
 });
 
-type BtnType = {
-  content:string;
-  type?:string;
-}
 
-const Btn = ({content, type}:BtnType) => {
+const Btn = ({content, type}) => {
   return (
-    <BtnStyled>{content}</BtnStyled>
+    <BtnStyled className={type}>{content}</BtnStyled>
   )
 };
 

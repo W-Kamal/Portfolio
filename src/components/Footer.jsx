@@ -1,3 +1,4 @@
+import React from 'react';
 import { useRouter } from 'next/router';
 import { styled } from '../../stitches.config';
 
@@ -14,13 +15,13 @@ export const Wrapper = styled('footer', {
   marginTop: '7rem',
 });
 
-const Footer = () => {
+export const Footer = () => {
   const router = useRouter();
   const { locale } = router;
   const transl = locale === 'fr' ? fr : en;
 
   // redirect with router depending on locale choice (i18n)
-  const changeLanguage = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const changeLanguage = (event) => {
     const locale = event.target.value;
     // router.push(router.pathname, router.asPath, { locale locale });
     router.push('/', '/', { locale });
@@ -46,5 +47,3 @@ const Footer = () => {
     </Wrapper>
   );
 };
-
-export default Footer;

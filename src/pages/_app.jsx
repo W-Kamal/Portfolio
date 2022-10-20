@@ -4,7 +4,7 @@ import { globalStyles } from '../../stitches.config';
 
 // Applying a piece of reset on css style
 globalStyles();
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 // Log some stats
-export function reportWebVitals(metric: NextWebVitalsMetric) {
+export function reportWebVitals(metric) {
   // console.log(metric);
 }
 

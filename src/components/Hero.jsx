@@ -1,8 +1,9 @@
+import React from 'react';
 import Image from 'next/image';
-import AvatarImg from '/public/myFace.webp';
-import SocialLinks from '@/components/SocialLinks';
-import Availability from '@/components/Availability';
-import Btn from '@/components/Button';
+import AvatarImg from '../../public/myFace.webp';
+import SocialLinks from '../components/SocialLinks';
+import Availability from '../components/Availability';
+import Btn from '../components/Button';
 import {
   HeroStyled,
   NavStyled,
@@ -13,7 +14,7 @@ import {
   StyledHeadSubtitle,
 } from '../styles/heroStyle.css';
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <HeroStyled>
       <NavStyled>
@@ -50,5 +51,3 @@ const Hero = () => {
     </HeroStyled>
   );
 };
-
-export default Hero;

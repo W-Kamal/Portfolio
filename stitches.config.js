@@ -108,26 +108,26 @@ export const { styled } = createStitches({
     }
   },
   utils: {
-    marginX: (value:number) => ({
+    marginX: (value) => ({
       marginLeft: `${value}rem`,
       marginRight: `${value}rem`,
     }),
-    marginY: (value:number) => ({
+    marginY: (value) => ({
       marginTop: `${value}rem`,
       marginBottom: `${value}rem`,
     }),
-    paddingX: (value:number) => ({
+    paddingX: (value) => ({
       paddingLeft: `${value}rem`,
       paddingRight: `${value}rem`,
     }),
-    paddingY: (value:number) => ({
+    paddingY: (value) => ({
       paddingTop: `${value}rem`,
       paddingBottom: `${value}rem`,
     }),
-    linearGradient: (value:number) => ({
+    linearGradient: (value) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
-    br: (value:number) => ({
+    br: (value) => ({
       borderRadius:value,
     })
   },

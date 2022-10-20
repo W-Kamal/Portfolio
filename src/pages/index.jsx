@@ -1,6 +1,5 @@
 import { supabase } from '../lib/supabaseClient';
 import { GetServerSideProps } from 'next';
-import { ProjectProps, Projects as ProjectsType } from '@/utils/types';
 
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
@@ -26,9 +25,9 @@ const MainWrapper = styled('div', {
 const AboutWrapper = styled('div', {});
 
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const { data: projects, error } = await supabase
-    .from<ProjectProps>('projects')
+    .from('projects')
     .select('*')
     .order('id');
 
@@ -38,8 +37,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   };
 };
-console.log(`projects : `, projects)
-const Home = ({ projects }: ProjectsType) => {
+
+const Home = ({ projects }) => {
 
   return (
     <PageWrapper className={theme4}>

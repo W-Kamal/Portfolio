@@ -1,9 +1,8 @@
+import React from "react";
 import { styled } from '../../stitches.config';
-import { ProjectProps } from '@/utils/types';
-import { ReactElement } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { formatDate, getArrayFromString } from '@/utils/helpers';
+import { formatDate, getArrayFromString } from '../utils/helpers';
 
 const View = styled('article', {
   backgroundImage: '',
@@ -21,7 +20,7 @@ const View = styled('article', {
 });
 
 
-export const Project = ({ props }: { props: ProjectProps }): ReactElement => {
+export const Project = ({ props }) => {
   const { id, created_at, title, description, type, status, objective, stack, is_released, thumbnail_url, repository_url, live_url } = { ...props }
   return (
     <>
@@ -45,7 +44,7 @@ export const Project = ({ props }: { props: ProjectProps }): ReactElement => {
             <span className='status'>{status}</span>
           </div>
           <div className='project-stack__wrapper'>
-            {getArrayFromString(stack, ', ').map((item: string) => (
+            {getArrayFromString(stack, ', ').map((item) => (
               <span className='stack' key={item}>{item} </span>
             ))}
           </div>
