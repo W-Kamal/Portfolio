@@ -7,6 +7,15 @@ In this project i planned to present a sort of showcase of some works built duri
 Feel free to give any feedbacks, with one condition that is kindly formulated. ;)
 </div>
 </br>
+<p align="center">
+	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=000" />
+  <img src="https://img.shields.io/badge/Next_js-20232A?style=flat-square&labelColor=fff&logo=nextdotjs&logoColor=20232A" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&labelColor=fff&logo=supabase&logoColor=3ECF8E" />
+  <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635262499/Github/vercel-icon-dark_pdka2i.svg" width="16px" alt="Vercel website link." />
+</p>
+
+---
+
 <!--
   <div align="center">
     <a href="https://twitter.com/MozaiK_K"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635200716/Github/twitter.svg" width="32px" alt="A link to our Twitter page." /></a> 
@@ -47,7 +56,7 @@ Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871
   </br>
   <li>
     <a href="https://supabase.io/">
-      <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635203209/Github/Supabase.svg" width="16px" alt="Supabase website link." /><span> Supabase</span>
+      <img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635203209/Github/Supabase.svg" width="16px" alt="Supabase website link." /><span>Supabase</span>
     </a>
   </li>
 </ul>
