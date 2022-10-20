@@ -126,6 +126,9 @@ export const { styled } = createStitches({
     }),
     linearGradient: (value:number) => ({
       backgroundImage: `linear-gradient(${value})`,
+    }),
+    br: (value:number) => ({
+      borderRadius:value,
     })
   },
   media: {

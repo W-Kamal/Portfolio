@@ -1,10 +1,10 @@
 import { supabase } from '../lib/supabaseClient';
 import { GetServerSideProps } from 'next';
-import { Project } from 'src/Types/index';
+import { ProjectProps, Projects as ProjectsType } from '@/utils/types';
 
 import Hero from '@/components/Hero';
 import Footer from '@/components/Footer';
-import ProjectWrapper from '@/components/ProjectWrapper';
+import { Project } from '@/components/Project';
 
 import { styled } from '../../stitches.config';
 import { theme1, theme2, theme3, theme4, theme5 } from '../../stitches.config';
@@ -28,7 +28,7 @@ const AboutWrapper = styled('div', {});
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const { data: projects, error } = await supabase
-    .from<Project>('projects')
+    .from<ProjectProps>('projects')
     .select('*')
     .order('id');
 
@@ -38,8 +38,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
     },
   };
 };
-
-const Home = ({ projects }: { projects: Project[] }) => {
+console.log(`projects : `, projects)
+const Home = ({ projects }: ProjectsType) => {
 
   return (
     <PageWrapper className={theme4}>
@@ -47,7 +47,7 @@ const Home = ({ projects }: { projects: Project[] }) => {
       <MainWrapper>
         {/* <pre>{JSON.stringify(projects, null, 2)}</pre> */}
 
-        <ProjectWrapper projects={projects} />
+        {/* <Project projects={projects} /> */}
         <AboutWrapper></AboutWrapper>
       </MainWrapper>
       <Footer />

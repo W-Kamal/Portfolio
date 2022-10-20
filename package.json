@@ -1,7 +1,12 @@
 {
-  "name": "wardi-kamal-profile",
-  "version": "0.1.0",
+  "name": "w-kamal-profile",
+  "version": "0.1.1",
   "private": true,
+  "description": "First version of my portfolio, made with Next.js Typescript and Stitches",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W-Kamal/Portfolio.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

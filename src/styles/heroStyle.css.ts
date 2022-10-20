@@ -27,7 +27,7 @@ export const SocialWrapperStyled = styled("div",{
   display:"flex",
   width:"7rem",
   height:"2rem",
-  justifyContent:"space-between",
+  justifyContent:"space-evenly",
   alignItems:"center",
   // marginInline: 1.5
 });

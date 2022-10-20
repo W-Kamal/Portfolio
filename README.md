@@ -1,4 +1,6 @@
-<!-- <div align="center"><img src="https://res.cloudinary.com/df23ubjbb/image/upload/v1635199620/Github/RAD_Logo.png" width="32" /> </div> -->
+<p align="center">
+  <img src="/public/favicon.png" width="100px"alt="Sublime's custom image"/>
+</p>
 <h1 align="center">Welcome to my portfolio Repo!</h1>
 <div align="center">
 In this project i planned to present a sort of showcase of some works built during my journey on the webdevelopment road.
@@ -19,49 +21,16 @@ Feel free to give any feedbacks, with one condition that is kindly formulated. ;
 
 ## About This Repository
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-### Getting Started
-
-First, if you want to run it localy, run the development server:
-
-```bash
-pnpm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is project has been bootstrapped with [Next.js](https://nextjs.org/).
 
 ### This project is deployed on Vercel
 
 Check out the demo [kamal-wardi-portfolio](https://vercel.com/wardi-kamal/kamal-wardi-portfolio/FSU2ST1nFkFyEkwBtpsr1Ce1Cex9) to see it !
 
 ## Project Structure
-
 Notion page [portfolio v1](https://wardikamal.notion.site/Portfolio-v1-a9f8e0871de44a02ac15b6b37da2f518) to see detailed informations !
 
-### Tests to implement
-
-<ul>
-  <li>test if numbers are correctly parsed if they are passed as strings</li>
-  <li>test if data are correctly pulled from the database</li>
-  <li>test if the data is correctly displayed in the page</li>
-  <li>test if data are correctly pushed to the database (if i had implemented create logic in the backend)</li>
-  <li>test if contact feature is working</li>
-  <li>test if the navigation is working</li>
-  <li>test if modal is working</li>
-  <li>test if the page is responsive</li>
-  <li>test if the page is accessible</li>
-  <li>test if the page is SEO friendly</li>
-  <li>test if the page is mobile friendly or mobile first</li>
-  <li>test if the page is accessible on mobile/tablet/desktop/large screen/ultra wide screen/etc</li>
-  <li>implement the contact feature</li>
-  <li>implement the security logic for the contact feature</li>
-  <li>implement the create logic in the backend (optional)</li>
-</ul>
-
-### Built With
+& ### Built With
 
 <ul>
   <li>
