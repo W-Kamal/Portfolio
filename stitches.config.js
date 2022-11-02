@@ -1,72 +1,65 @@
 import { globalCss, createStitches, createTheme } from "@stitches/react";
 
 export const globalStyles = globalCss({
-  'html':{
-    webkitTextSizeAdjust:'none',
-    webkitFontSmoothing:'antialiased',
-    cursor:'default',
-    webkitTapHighlightColor:'transparent'
+  'html': {
+    webkitTextSizeAdjust: 'none',
+    webkitFontSmoothing: 'antialiased',
+    cursor: 'default',
+    webkitTapHighlightColor: 'transparent'
   },
-  '*':{
+  '*': {
     boxSizing: 'border-box'
   },
-  'body':{
-    margin: 0
+  'body': {
+    margin: 0,
+    padding: 0
   },
-  'a':{
+  'a': {
     color: 'inherit',
-    textDecoration : 'none'
+    textDecoration: 'none'
   },
   [`li, ul`]: {
-    listStyle:'none'
-  },
-  [`a, body, div, footer, h1, h2, header, html, img, li, nav, p, span, ul`]:{
-    margin:0,
-    padding: 0,
-    textIndent: 0,
-    border:0,
-    font:'inherit',
-    fontSize:'100%',
+    listStyle: 'none'
   }
 });
 
 export const { styled } = createStitches({
   theme: {
-    colors: {      
-      WintergreenDream:'hsla(154, 15%, 49%, 1)', //#6B9080
-      AzureX11:'hsla(180, 31%, 94%, 1)', //#EAF4F4
-      cambridgeBlue:'hsla(147,21%,70%,1)', //A4C3B2
-      LightCyan:'hsla(167,29%,85%,1)', //#CCE3DE
-      MintCream2:'hsla(133,100%,98%,1)', //#F6FFF8
+    colors: {
+      WintergreenDream: 'hsla(154, 15%, 49%, 1)', //#6B9080
+      AzureX11: 'hsla(180, 31%, 94%, 1)', //#EAF4F4
+      cambridgeBlue: 'hsla(147,21%,70%,1)', //A4C3B2
+      LightCyan: 'hsla(167,29%,85%,1)', //#CCE3DE
+      MintCream2: 'hsla(133,100%,98%,1)', //#F6FFF8
 
-      PrussianBlue:'hsla(209,52%,16%,1)', //#13293D
-      SaphireBlue:'hsla(199,100%,29%,1)', //#006494
-      CGBlue:'hsla(198,63%,38%,1)', //#247BA0
-      CarolinaBlue:'hsla(202,78%,49%,1)', //#1B98E0
-      AliceBlue:'hsla(186,28%,93%,1)', //#E8F1F2
+      PrussianBlue: 'hsla(209,52%,16%,1)', //#13293D
+      SaphireBlue: 'hsla(199,100%,29%,1)', //#006494
+      CGBlue: 'hsla(198,63%,38%,1)', //#247BA0
+      CarolinaBlue: 'hsla(202,78%,49%,1)', //#1B98E0
+      AliceBlue: 'hsla(186,28%,93%,1)', //#E8F1F2
 
-      PaleSpringBud:'hsla(74,32%,76%,1)', //#CCD5AE
-      PaleSpringBud2:'hsla(67,50%,86%,1)', //#E9EDC9
-      PapayeWhip:'hsla(43,82%,89%,1)', //#FAEDCD
-      Fawn:'hsla(30,53%,64%,1)', //#D4A373
-      Cornsilk:'hsla(52,94%,94%,1)', //#FEFAE0
-      
-      OuterSpaceCrayola:'hsla(164,9%,23%,1)', //#36413E
-      PrincetonOrange:'hsla(24,85%,56%,1)', // #EE7B30
-      PersianOrange:'hsla(32,55%,55%,1)', //#CB904D
-      DavysGrey:'hsla(220,2%,37%,1)', //#5D5E60
-      
-      RussianGreen:'hsla(101,22%,45%,1)', //#688B58
-      OxfordBlue:'hsla(213,96%,11%,1)', //#011936
+      PaleSpringBud: 'hsla(74,32%,76%,1)', //#CCD5AE
+      PaleSpringBud2: 'hsla(67,50%,86%,1)', //#E9EDC9
+      PapayeWhip: 'hsla(43,82%,89%,1)', //#FAEDCD
+      Fawn: 'hsla(30,53%,64%,1)', //#D4A373
+      Cornsilk: 'hsla(52,94%,94%,1)', //#FEFAE0
+
+      OuterSpaceCrayola: 'hsla(164,9%,23%,1)', //#36413E
+      PrincetonOrange: 'hsla(24,85%,56%,1)', // #EE7B30
+      PersianOrange: 'hsla(32,55%,55%,1)', //#CB904D
+      DavysGrey: 'hsla(220,2%,37%,1)', //#5D5E60
+
+      RussianGreen: 'hsla(101,22%,45%,1)', //#688B58
+      OxfordBlue: 'hsla(213,96%,11%,1)', //#011936
       MintCream: 'hsla(113, 31%, 95%, 1)', //#EFF6EE
-      BlackCoral:'hsla(212,17%,33%,1)', //#465362
-      BlueMunsell:'hsla(191,64%,40%,1)', //#258EA6
-      
+      BlackCoral: 'hsla(212,17%,33%,1)', //#465362
+      BlueMunsell: 'hsla(191,64%,40%,1)', //#258EA6
+
       // Aliases ($ to use properties as variables)
       primary: "$WintergreenDream",
       secondary: "$MintCream2",
       background: "$AliceBlue",
-      button:"WintergreenDream",
+      button: "WintergreenDream",
       border: "$AliceBlue",
 
     },
@@ -128,7 +121,7 @@ export const { styled } = createStitches({
       backgroundImage: `linear-gradient(${value})`,
     }),
     br: (value) => ({
-      borderRadius:value,
+      borderRadius: value,
     })
   },
   media: {
@@ -146,39 +139,39 @@ export const theme1 = createTheme({
     primary: "$OuterSpaceCrayola",
     secondary: "$DavysGrey",
     ternary: "$MintCream",
-    button:"$PersianOrange",
+    button: "$PersianOrange",
     background: "$MintCream",
-    border:"$PersianOrange"
+    border: "$PersianOrange"
   },
 });
 export const theme2 = createTheme({
   colors: {
     primary: "$BlackCoral",
     secondary: "$DavysGrey",
-    button:"$CGBlue",
+    button: "$CGBlue",
     background: "$AliceBlue",
-    border:"$CGBlue"
+    border: "$CGBlue"
   }
 });
 export const theme3 = createTheme({
   colors: {
     primary: "$OuterSpaceCrayola",
     secondary: "$DavysGrey",
-    button:"$PrincetonOrange",
+    button: "$PrincetonOrange",
     background: "$Cornsilk",
-    border:"$PrincetonOrange"
+    border: "$PrincetonOrange"
   },
 });
 export const theme4 = createTheme({
   colors: {
     primary: "$OuterSpaceCrayola",
     secondary: "$DavysGrey",
-    button:"$BlueMunsell",
+    button: "$BlueMunsell",
     background: "$LightCyan",
-    border:"$BlueMunsell"
+    border: "$BlueMunsell"
   }
 });
-export const theme5  = createTheme({
+export const theme5 = createTheme({
   colors: {
     primary: "$PrussianBlue",
     secondary: "$AliceBlue",

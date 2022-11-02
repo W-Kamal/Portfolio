@@ -31,7 +31,7 @@ export const Footer = () => {
     <Wrapper>
       <Availability />
       {/* <Btn /> */}
-      <select
+      {/* <select
         onChange={changeLanguage}
         defaultValue={locale}
         className='text-white text-shadow-sm text-lg bg-transparent tracking-wide'
@@ -42,7 +42,7 @@ export const Footer = () => {
         <option className='text-black' value='fr'>
           FR
         </option>
-      </select>
+      </select> */}
       <SocialLinks />
     </Wrapper>
   );
